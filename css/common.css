@@ -1,0 +1,109 @@
+body {
+    /* background-image: url(../images/2050700.jpg); */
+    /* background-repeat: no-repeat; */
+    /* 背景图片固定 */
+    background-attachment: fixed;
+    /* background-image: linear-gradient(#363636, #fff); */
+}
+
+/* 自适应宽度 */
+.autoWidth {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.nav_header {
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 78px;
+    /* height: 180px; */
+    /* background-image: url(https://i0.hdslb.com/bfs/archive/5d624c842e091447cf9b679d4cc6ae70d731ea06.png@3840w_360h_1c_90q); */
+    background-color: #363636;
+}
+
+.logo {
+    height: 71px;
+    width: 64px;
+    float: left;
+    margin-left: 50px;
+    padding-top: 7px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 修改导航栏插件 */
+.diySettings {
+    float: right;
+    width: 720px;
+    margin-right: -15px;
+}
+
+
+nav.navbar.bootsnav ul.nav li ul li a:hover {
+    text-decoration: underline;
+    color: #60bacd!important;
+}
+/* /修改导航栏插件 */
+
+/* 修改人物卡片插件 */
+.container .row div {
+    margin: 10px auto;
+}
+/* /修改人物卡片插件 */
+
+/* 修改背景 */
+.htmleaf-container .canvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+/* /修改背景 */
+
+/* 修改文章板块 */
+.cd-articles .cd-read-more{
+    border-radius: 10px;
+    background-color: #fff;
+    color: #363636;
+}
+/* /修改文章板块 */
+
+.demo {
+    /* background-color: #60bacd; */
+    height: 1000px;
+}
+
+
+/* 底部 */
+.footer {
+    font-size: 12px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #363636;
+    color: #fff;
+}
+
+.footer ul {
+    width: 126px;
+    padding-top: 15px;
+    padding-left: 0;
+}
+
+.footer ul li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.footer ul li:nth-child(1) {
+    width: 50px;
+}
+/* /底部 */

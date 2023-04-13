@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+/* 手搓侧边栏 */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* body {
+    background-color: rgb(209, 213, 219);
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+} */
+
+.shell {
+    /* 位置 */
+    position: absolute;
+    /*z-index: 10086;*/
+float:left;
+    /*margin-top: -330px;*/
+    top:0%;
+    left: 10px;
+    width: 67px;
+    height: 330px;
+    /* /位置 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(17, 24, 39);
+    border-radius: 10px;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.box {
+    display: block;
+    height: 15%;
+    width: 85%;
+    margin: 9px;
+    border-radius: 5px;
+    position: relative;
+    transition: .3s;
+    color: rgb(160, 160, 175);
+}
+
+.box i {
+    font-size: 30px;
+    position: absolute;
+    margin: 15px 0 0 15px;
+}
+
+.box:nth-child(1)::before,
+.box:nth-child(5)::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(55, 65, 81);
+    position: absolute;
+    bottom: -10px;
+}
+
+.box span {
+    position: relative;
+    top: 22px;
+    left: 80px;
+    font: 500 20px '';
+    opacity: 0;
+    transition: .1s;
+}
+
+.shell:hover {
+    width: 270px;
+}
+
+.box:hover {
+    background-color: rgb(55, 65, 81);
+}
+
+.shell:hover span {
+    opacity: 1;
+}
+
+.box:hover {
+    color: #fff;
+}
+
+.shell:nth-child(2) {
+    background-color: rgb(243, 244, 246);
+}
+
+.shell:nth-child(2) .box:hover {
+    background-color: rgb(209, 213, 219);
+    color: rgb(241, 159, 159);
+}
+
+.shell:nth-child(2) .box {
+    color: #000;
+}
+
+.shell:nth-child(3) {
+    background-color: rgb(49, 46, 129);
+}
+
+.shell:nth-child(3) .box:hover {
+    background-color: rgb(67, 56, 202);
+}
+
+.shell:nth-child(3) .box {
+    color: rgb(140, 120, 240);
+}
+/* /手搓侧边栏 */
+
+
+
+
+
+/*.notebook-update-msg {*/
+/*    margin: 10px 50px;*/
+/*}*/
+
+/*.notebook-update-msg tbody tr:nth-child(2n-1) {*/
+/*    background-color: antiquewhite;*/
+/*}*/
+
+/*.notebook-update-msg tbody tr td {*/
+/*    width: 100px;*/
+/*    height: 50px;*/
+/*    border: 1px solid #000;*/
+/*    text-align: center;*/
+/*    line-height: 50px;*/
+/*}*/
+
+/*.notebook-update-msg tbody tr td a {*/
+/*    display: inline-block;*/
+/*}*/
+
+.notebook-articles {
+    position: relative;
+    /*width: 90%;*/
+    /*max-width: 650px;*/
+    margin: 0 auto;
+}
+
+.notebook-articles::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'mobile';
+    display: none;
+}
+
+.notebook-articles article {
+    padding: 1em 0;
+    /*border-bottom: 1px solid #e6e6e6;*/
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.notebook-articles article:last-of-type {
+    border-bottom: none;
+}
+
+.notebook-articles ul {
+    list-style: none;
+    margin: .6em 0 .2em;
+    color: #141414;
+    line-height: 1.2;
+    font-size: 2.4rem;
+    font-family: Georgia, serif;
+}
+
+.notebook-articles li {
+
+    list-style: none;
+    padding: 1em 0;
+    line-height: 1.6;
+}
+
+
+
+/*.article{*/
+/*    width: 390px;*/
+/*    !*background: radial-gradient(circle, rgba(224, 213, 213, 0.47) 0%, rgb(226, 216, 216) 100%);*!*/
+/*    font-family: 'Lato',sans-serif;*/
+/*    !*font-weight: 500;*!*/
+/*    font-size: 4.4rem;*/
+/*    cursor: pointer;*/
+/*    position: relative;*/
+
+/*    display: flex;*/
+/*    border-radius: 70px;*/
+/*    margin: 12px;*/
+/*    height:50px;*/
+/*    line-height: 50px;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+details,
+summary {
+    outline: none;
+}
+
+details {
+    cursor: pointer;
+
+}
+
+
+summary {
+    padding: 16px;
+    /*display: block;*/
+    background: radial-gradient(circle, rgba(224, 213, 213, 0.47) 0%, rgb(226, 216, 216) 100%);
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*summary::before {*/
+/*    content: '';*/
+/*    border-width: 1.0rem;*/
+/*    border-style: solid;*/
+/*    border-color: transparent transparent transparent rgba(255, 255, 255, 0.92);*/
+/*    background: url(../svg/chevron-right.svg) no-repeat;*/
+/*    background-size: 100% 100%;*/
+/*    position: absolute;*/
+/*    top: 18px;*/
+/*    left: 20px;*/
+/*    transform: rotate(0);*/
+/*    transform-origin: 3.2px 50%;*/
+/*    transition: .25s transform ease;*/
+/*}*/
+
+/*details[open]>summary::before {*/
+/*    transform: rotate(90deg);*/
+/*}*/
+
+.notebook-articles-dropdown summary::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 1em; height: 1em;
+    margin: .2em 0 0 .5ch;
+    background: url(../svg/chevron-right.svg) no-repeat;
+    background-size: 100% 100%;
+    transition: transform .2s;
+}
+.notebook-articles-dropdown[open] summary::after {
+    margin-top: .25em;
+    transform: rotate(90deg);
+}

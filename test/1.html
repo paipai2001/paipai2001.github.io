@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 自定义的三角 */
+        .details-1 summary::after {
+            content: '';
+            position: absolute;
+            width: 1em; height: 1em;
+            margin: .2em 0 0 .5ch;
+            background: url(../svg/chevron-right.svg) no-repeat;
+            background-size: 100% 100%;
+            transition: transform .2s;
+        }
+        .details-1:not([open]) summary::after {
+            margin-top: .25em;
+            transform: rotate(90deg);
+        }
+
+       </style>
+</head>
+<body>
+
+
+<details class="details-1" open>
+    <summary>这是示例1</summary>
+    <content>本案例展示对小三角UI重定义：包括显示在右侧，颜色减淡等。</content>
+</details>
+
+
+</body>
+</html>

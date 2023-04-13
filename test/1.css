@@ -1,0 +1,27 @@
+.questions-and-answers__item:not(:last-child) {
+    border-bottom: 1px solid #d1d5db;
+}
+.questions-and-answers__header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.questions-and-answers__toggle {
+    margin-right: 0.25rem;
+}
+.questions-and-answers__title {
+    /* Take the available width */
+    flex: 1;
+}
+.questions-and-answers__content {
+    padding: 0 0.5rem;
+}
+
+.questions-and-answers__item--collapsed .questions-and-answers__content {
+    display: none;
+}
+.questions-and-answers__item--expanded .questions-and-answers__content {
+    display: block;
+}

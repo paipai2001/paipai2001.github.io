@@ -1,0 +1,23 @@
+{
+  "id": "4010004",
+  "name": "igem",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4552962",
+      "name": "下拉箭头小2",
+      "font_class": "xialajiantouxiao",
+      "unicode": "e907",
+      "unicode_decimal": 59655
+    },
+    {
+      "icon_id": "4552963",
+      "name": "收起箭头小2",
+      "font_class": "shouqijiantouxiao",
+      "unicode": "e908",
+      "unicode_decimal": 59656
+    }
+  ]
+}
