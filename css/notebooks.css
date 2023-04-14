@@ -20,7 +20,7 @@
     /* 位置 */
     position: absolute;
     /*z-index: 10086;*/
-float:left;
+    float:left;
     /*margin-top: -330px;*/
     top:0%;
     left: 10px;
@@ -173,7 +173,7 @@ float:left;
     font-family: Georgia, serif;
 }
 
-.notebook-articles li {
+.notebook-articles p {
 
     list-style: none;
     padding: 1em 0;
@@ -215,6 +215,25 @@ summary {
     padding: 16px;
     /*display: block;*/
     background: radial-gradient(circle, rgba(224, 213, 213, 0.47) 0%, rgb(226, 216, 216) 100%);
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    align-items: center;
+    justify-content: center;
+    transition: .1s;
+}
+
+
+summary:hover {
+    padding: 16px;
+    /*display: block;*/
+    background: radial-gradient(circle, rgb(226, 216, 216) 0%, rgba(224, 213, 213, 0.47) 100%);
+    color: #07303f;
     border-radius: 15px;
     position: relative;
     cursor: pointer;

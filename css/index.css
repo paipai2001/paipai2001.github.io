@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Homemade+Apple&family=Sacramento&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Dancing+Script:wght@700&family=Gloria+Hallelujah&display=swap');
 
 .index-card {
     display: block;
@@ -146,8 +147,8 @@
 
 .index-articles {
     position: relative;
-    width: 90%;
-    max-width: 650px;
+    /*width: 90%;*/
+    max-width: 800px;
     margin: 0 auto 3em;
 }
 .index-articles::before {
@@ -191,3 +192,57 @@
     float: right;
     margin-left: 30px;
 }
+
+.interested{
+    margin-top: 50px;
+text-align: center;
+    color: #141414;
+    line-height: 1.2;
+    font-size: 4.4rem;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.option{
+    position: relative;
+    display: flex;
+}
+
+.option-1 a{
+    text-decoration: none;
+
+}
+
+.option-1{
+    margin-top: 15px;
+    margin-left: 40px;
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .25s ease-in;
+    float: left;
+    box-shadow: 10px 10px 20px 1px gainsboro;
+    font-family: 'Comic Neue', cursive;
+
+}
+
+.option-1:hover{
+    transform: translate(0,-15px);
+}
+
+.option-1 img{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.option-1 p{
+    text-align: center;
+    margin-top: -25px;
+    color: #20293f;
+}
+
