@@ -1,0 +1,141 @@
+.first_box{
+padding-top: 11px;
+  margin-left: auto;
+  margin-right: auto;
+  
+   /* background-color: #fb0c0c; */
+
+}
+.text1{
+    text-align: center;
+    color: #080808;
+   
+}
+.outheadinglineunder{
+    width: 60%;
+    height: 13px;
+    background: linear-gradient(90deg,#080808 19.42%, #f9f5f5 100%);
+    border-radius: 30px;
+    margin-left: auto;
+  margin-right: auto;
+}
+.passage1{
+   margin: auto;
+   height:100px;
+   margin-top: 20px;
+   /* background-color: #0b0a0a;  */
+}
+.line1{
+    text-align: center;
+  color: rgb(5, 5, 5);
+  
+}
+.column{
+  width: 100px;
+  height: 30px;
+  margin-left: 174px;
+  margin-right: auto;
+  
+}
+.online-column{
+  font-size: 14px;
+ 
+}
+.contest{
+  width: 1100px;
+  height: 150px;
+  /* background-color: #000; */
+  margin-left: 174px;
+  margin-right: auto;
+  /* border-width: 5px; */
+  padding: 1rem;
+  margin-bottom: 3rem;
+  /* border-style: solid; */
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)
+}
+.contest > h5{
+  font-size: 20px;
+}
+.contest > ul{
+  display: block;
+  font-size: 19px;
+}
+.whole_body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #000; */
+}
+.card{
+  position: relative;
+  width: 300px;
+  height: 450px;
+  margin: 20px;
+  margin-top: -300px;
+  margin-bottom: 0px;
+  background-color: #758a99;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+.card .photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.card .photo{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+  overflow: hidden;
+  
+  /* 动画过渡 */
+  transition: 0.5s;
+}
+.card:hover .photo{
+  top: 30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+} 
+.card h4{
+  position: absolute;
+  top: 370px;
+  transition: 0.5s;
+}
+.card:hover h4{
+  top:170px;
+
+}
+.card p{
+  width:90%;
+  text-indent: 32px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  margin-top: 212px;
+  line-height: 30px;
+}
+.card a{
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.5);
+  padding: 8px 32px;
+  border-radius: 8px;
+}
+.card a:hover{
+  color: #fbf5f5;
+  background-color:  rgba(255,255,255,0.2);
+}
+.other_box{
+  margin-top: -300px;
+}

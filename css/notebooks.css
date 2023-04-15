@@ -114,31 +114,6 @@
 .shell:nth-child(3) .box {
     color: rgb(140, 120, 240);
 }
-/* /手搓侧边栏 */
-
-
-
-
-
-/*.notebook-update-msg {*/
-/*    margin: 10px 50px;*/
-/*}*/
-
-/*.notebook-update-msg tbody tr:nth-child(2n-1) {*/
-/*    background-color: antiquewhite;*/
-/*}*/
-
-/*.notebook-update-msg tbody tr td {*/
-/*    width: 100px;*/
-/*    height: 50px;*/
-/*    border: 1px solid #000;*/
-/*    text-align: center;*/
-/*    line-height: 50px;*/
-/*}*/
-
-/*.notebook-update-msg tbody tr td a {*/
-/*    display: inline-block;*/
-/*}*/
 
 .notebook-articles {
     position: relative;
@@ -179,26 +154,6 @@
     padding: 1em 0;
     line-height: 1.6;
 }
-
-
-
-/*.article{*/
-/*    width: 390px;*/
-/*    !*background: radial-gradient(circle, rgba(224, 213, 213, 0.47) 0%, rgb(226, 216, 216) 100%);*!*/
-/*    font-family: 'Lato',sans-serif;*/
-/*    !*font-weight: 500;*!*/
-/*    font-size: 4.4rem;*/
-/*    cursor: pointer;*/
-/*    position: relative;*/
-
-/*    display: flex;*/
-/*    border-radius: 70px;*/
-/*    margin: 12px;*/
-/*    height:50px;*/
-/*    line-height: 50px;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*}*/
 
 details,
 summary {
@@ -247,24 +202,6 @@ summary:hover {
 }
 
 
-/*summary::before {*/
-/*    content: '';*/
-/*    border-width: 1.0rem;*/
-/*    border-style: solid;*/
-/*    border-color: transparent transparent transparent rgba(255, 255, 255, 0.92);*/
-/*    background: url(../svg/chevron-right.svg) no-repeat;*/
-/*    background-size: 100% 100%;*/
-/*    position: absolute;*/
-/*    top: 18px;*/
-/*    left: 20px;*/
-/*    transform: rotate(0);*/
-/*    transform-origin: 3.2px 50%;*/
-/*    transition: .25s transform ease;*/
-/*}*/
-
-/*details[open]>summary::before {*/
-/*    transform: rotate(90deg);*/
-/*}*/
 
 .notebook-articles-dropdown summary::after {
     content: '';
