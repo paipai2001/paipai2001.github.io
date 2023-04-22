@@ -1,71 +1,49 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
     <style>
-        body {
-            background: #000;
+        /* 将background-image中url改成自己gif的路径即可 */
+        .preloader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: 99999;
+            background-color: #ffffff;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-image: url(https://2021.igem.org/wiki/images/b/bc/T--ECUST_China--preloader.gif);
         }
-
-        div {
-            position: relative;
-            width: 35vmin;
-            height: 35vmin;
-            background: linear-gradient(120deg, #34e0f0 0%, #b400ff 100%);
-            opacity: .8;
-            margin: 25vh auto;
-            border-radius: 35%;
-            animation: rotateMain 8s linear infinite;
+        .content {
+            height: 1000px;
+            background-color: red;
         }
-
-        div::before {
-            position: absolute;
-            content: "";
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(180deg, #35a0f0 0%, #b233f0 100%);
-            opacity: .8;
-            box-shadow: 5px 5px 90px rgba(10, 102, 255, 0.5);
-            border-radius: 35%;
-            animation: rotateMain 8s linear 2s infinite;
-        }
-
-        div::after {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(60deg, #33580f 0%, #b7ee6d 100%);
-            opacity: .8;
-            box-shadow: 5px 5px 60px rgba(20, 102, 255, 0.3);
-            border-radius: 35%;
-            animation: rotateMain 8s linear 4s infinite;
-            z-index: -1;
-        }
-
-        @keyframes rotateMain {
-            50% {
-                transform: rotateZ(180deg);
-                border-radius: 50%;
-            }
-            100% {
-                transform: rotateZ(360deg);
-                border-radius: 35%;
-            }
-        }
-
-       </style>
+    </style>
 </head>
+
 <body>
+<!-- 加载动画 -->
+<div class="preloader"></div>
 
+<!-- 网页内容 -->
+<div class="content">1</div>
 
-<div></div>
-
+<script>
+    //低版本jquery用的是$(window).load()函数，高版本用的是$(window).on()
+    $(window).on('load',function handlePreloader() {
+        if ($('.preloader').length) {
+            $('.preloader').delay(200).fadeOut(500);
+        }
+    });
+</script>
 </body>
+
 </html>

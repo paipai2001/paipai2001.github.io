@@ -107,3 +107,123 @@ nav.navbar.bootsnav ul.nav li ul li a:hover {
     width: 50px;
 }
 /* /底部 */
+
+/*css loding*/
+#loading {
+    position: fixed !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    background: #000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    font-size: 14px;
+    line-height: 20px
+}
+
+#loading-one {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 50px 0 0 -80px;
+    padding: 3px 10px
+}
+
+.circle {
+    background-color: rgba(0,0,0,0);
+    border: 5px solid rgba(0,183,229,0.9);
+    opacity: .9;
+    border-right: 5px solid rgba(0,0,0,0);
+    border-left: 5px solid rgba(0,0,0,0);
+    border-radius: 50px;
+    box-shadow: 0 0 35px #2187e7;
+    width: 50px;
+    height: 50px;
+    margin: -25px;
+    -moz-animation: spinPulse 1s infinite ease-in-out;
+    -webkit-animation: spinPulse 1s infinite linear;
+    position: absolute;
+    top: 50%;
+    left: 50%
+}
+
+.circle1 {
+    background-color: rgba(0,0,0,0);
+    border: 5px solid rgba(0,183,229,0.9);
+    opacity: .9;
+    border-left: 5px solid rgba(0,0,0,0);
+    border-right: 5px solid rgba(0,0,0,0);
+    border-radius: 50px;
+    box-shadow: 0 0 15px #2187e7;
+    width: 30px;
+    height: 30px;
+    margin: -15px;
+    position: relative;
+    top: -50px;
+    -moz-animation: spinoffPulse 1s infinite linear;
+    -webkit-animation: spinoffPulse 1s infinite linear;
+    position: absolute;
+    top: 50%;
+    left: 50%
+}
+
+@-moz-keyframes spinPulse {
+    0% {
+        -moz-transform: rotate(160deg);
+        opacity: 0;
+        box-shadow: 0 0 1px #2187e7
+    }
+
+    50% {
+        -moz-transform: rotate(145deg);
+        opacity: 1
+    }
+
+    100% {
+        -moz-transform: rotate(-320deg);
+        opacity: 0
+    }
+}
+
+@-moz-keyframes spinoffPulse {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+
+    100% {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes spinPulse {
+    0% {
+        -webkit-transform: rotate(160deg);
+        opacity: 0;
+        box-shadow: 0 0 1px #2187e7
+    }
+
+    50% {
+        -webkit-transform: rotate(145deg);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: rotate(-320deg);
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes spinoffPulse {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+/*css loding*/

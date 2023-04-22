@@ -19,6 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="plugins/201512221545/css/default.css">
 	<link rel="stylesheet" href="plugins/201512221545/css/style.css"> <!-- Resource style -->
 	<script src="plugins/201512221545/js/modernizr.js"></script> <!-- Modernizr -->
+
 	<!-- 插件引入需要end -->
 	<!-- 公用部分begin -->
 	<link href="css/base.css">
@@ -28,17 +29,25 @@
 	<link rel="stylesheet" href="css/index.css">
 	<script src="js/index.js"></script>
 
-	<link rel="stylesheet" href="css/animate.min.css">
 
+
+	<link rel="stylesheet" href="css/animate.min.css">
+	<!-- full-page -->
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<!-- <script src="js/jquery.min.js"></script> -->
+	<!-- jquery.easings.min.js 是必须的，用于 easing 参数，也可以使用完整的 jQuery UI 代替 -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/mypage.js"></script>
+	<!-- fullpage -->
 
 </head>
 
 <body>
-	<!-- 背景 -->
-	<!-- <div class="htmleaf-container">
-		<canvas id="canvas"></canvas>
-	</div> -->
-	<!-- /背景 -->
+
+<!--loading-->
+<div id="loading"> <p id="loading-one"></p > <div class="circle"></div> <div class="circle1"></div> </div>
+
 	<!-- 导航栏begin -->
 	<header class="nav_header">
 		<div class="nav_container diySettings">
@@ -47,7 +56,7 @@
 					<nav class="navbar navbar-default navbar-mobile bootsnav on">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse"
-									data-target="#navbar-menu">
+								data-target="#navbar-menu">
 								<i class="fa fa-bars"></i>
 							</button>
 						</div>
@@ -62,7 +71,7 @@
 										<li><a href="#">Partnership</a></li>
 										<li><a href="attributions.html">Attributions</a></li>
 										<li><a href="notebook.html">Notebook</a></li>
-										<li><a href="#">Experiments</a></li>
+										<li><a href="experiment.html">Experiments</a></li>
 										<li><a href="#">Safety</a></li>
 									</ul>
 								</li>
@@ -114,47 +123,44 @@
 	</header>
 	<!-- 导航栏end -->
 	<!-- 第一版面 -->
-	<div class="index-card">
+	
+	<div class="index-card ">
 		<div class="introduction">
-<!--			<div class="card_body">-->
-<!--				<div class="card">-->
-<!--					<div class="card-content">-->
-<!--						<img src="images/igem_logo.png" alt="图片加载失败请重试！" width="180px" height="174px">-->
-
-<!--						<p>The iGEM Foundation is an independent, non-profit organization dedicated to the advancement of synthetic biology, education and competition, and the development of an open, collaborative, and cooperative community.</p>-->
-
-<!--					</div>-->
-
-<!--				</div>-->
-<!--			</div>-->
 			<svg viewBox="0 0 400 200">
 				<text x="0" y="70%"> iGEM </text>
 			</svg>
 		</div>
 	</div>
+</div>
 	<!-- /第一版面 -->
-
-
+	
 
 	<!-- 第二版面 -->
 
-	<div class="index-articles" >
+	<div class="index-articles">
 		<ul id="ARTICLE">
 			<li>
 				<article>
 					<header>
-						<div class="box wow fadeInLeft" data-wow-duration='1s' data-wow-delay="0.1s" >
+						<div class="box wow fadeInLeft " data-wow-duration='1s' data-wow-delay="0.2s">
 
 							<img src="plugins/201512221545/img/img-1.png" alt="article image">
 						</div>
 
-						<div class="box wow fadeInRight" data-wow-duration='1s' data-wow-delay="0.2s">
+						<div class="box wow fadeInRight" data-wow-duration='1s' data-wow-delay="0.3s">
 							<h1>The Problem</h1>
 						</div>
 					</header>
-					<div class="box wow bounceIn" data-wow-duration='1s' data-wow-delay="0.2s">
+					<div class="box wow bounceIn" data-wow-duration='1s' data-wow-delay="0.4s">
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis maxime id, sunt, eum sed blanditiis aliquid! Minus assumenda tempore perspiciatis, numquam est aliquam, quis molestias enim consequuntur suscipit similique cumque ut natus facilis laboriosam quidem, nesciunt quasi doloribus tenetur. Quas doloremque suscipit, molestias odit, et quasi? Quas hic numquam, vitae?
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis maxime id, sunt,
+							eum
+							sed blanditiis aliquid! Minus assumenda tempore perspiciatis, numquam est aliquam, quis
+							molestias enim consequuntur suscipit similique cumque ut natus facilis laboriosam
+							quidem,
+							nesciunt quasi doloribus tenetur. Quas doloremque suscipit, molestias odit, et quasi?
+							Quas
+							hic numquam, vitae?
 						</p>
 
 					</div>
@@ -163,17 +169,24 @@
 			<li>
 				<article>
 					<header>
-						<div class="box wow fadeInRight" data-wow-duration='1s' data-wow-delay="0.1s" >
+						<div class="box wow fadeInRight" data-wow-duration='1s' data-wow-delay="0.3s">
 							<img src="plugins/201512221545/img/img-1.png" alt="article image">
 						</div>
 
-						<div class="box wow fadeInLeft" data-wow-duration='1s' data-wow-delay="0.2s">
+						<div class="box wow fadeInLeft" data-wow-duration='1s' data-wow-delay="0.4s">
 							<h1>Our solution</h1>
 						</div>
 					</header>
-					<div class="box wow bounceIn" data-wow-duration='1s' data-wow-delay="0.2s">
+					<div class="box wow bounceIn" data-wow-duration='1s' data-wow-delay="0.5s">
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis maxime id, sunt, eum sed blanditiis aliquid! Minus assumenda tempore perspiciatis, numquam est aliquam, quis molestias enim consequuntur suscipit similique cumque ut natus facilis laboriosam quidem, nesciunt quasi doloribus tenetur. Quas doloremque suscipit, molestias odit, et quasi? Quas hic numquam, vitae?
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis maxime id, sunt,
+							eum
+							sed blanditiis aliquid! Minus assumenda tempore perspiciatis, numquam est aliquam, quis
+							molestias enim consequuntur suscipit similique cumque ut natus facilis laboriosam
+							quidem,
+							nesciunt quasi doloribus tenetur. Quas doloremque suscipit, molestias odit, et quasi?
+							Quas
+							hic numquam, vitae?
 						</p>
 
 					</div>
@@ -182,25 +195,31 @@
 			<li>
 				<article>
 					<header>
-						<div class="box wow fadeInLeft" data-wow-duration='1s' data-wow-delay="0.1s" >
+						<div class="box wow fadeInLeft" data-wow-duration='1s' data-wow-delay="0.4s">
 							<img src="plugins/201512221545/img/img-1.png" alt="article image">
 						</div>
 
-						<div class="box wow fadeInRight" data-wow-duration='1s' data-wow-delay="0.2s">
+						<div class="box wow fadeInRight" data-wow-duration='1s' data-wow-delay="0.5s">
 							<h1>Impact of our project</h1>
 						</div>
 					</header>
-					<div class="box wow bounceIn" data-wow-duration='1s' data-wow-delay="0.2s">
+					<div class="box wow bounceIn" data-wow-duration='1s' data-wow-delay="0.6s">
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis maxime id, sunt, eum sed blanditiis aliquid! Minus assumenda tempore perspiciatis, numquam est aliquam, quis molestias enim consequuntur suscipit similique cumque ut natus facilis laboriosam quidem, nesciunt quasi doloribus tenetur. Quas doloremque suscipit, molestias odit, et quasi? Quas hic numquam, vitae?
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis maxime id, sunt,
+							eum
+							sed blanditiis aliquid! Minus assumenda tempore perspiciatis, numquam est aliquam, quis
+							molestias enim consequuntur suscipit similique cumque ut natus facilis laboriosam
+							quidem,
+							nesciunt quasi doloribus tenetur. Quas doloremque suscipit, molestias odit, et quasi?
+							Quas
+							hic numquam, vitae?
 						</p>
 
 					</div>
 				</article>
 			</li>
 		</ul>
-
-    <!--链接-->
+		<!--链接-->
 		<br><br><br>
 		<div class="box wow fadeInUp" data-wow-duration='1s' data-wow-delay="0.2s">
 			<div class="interested">
@@ -212,54 +231,54 @@
 
 		<div class="option">
 			<div class="box wow fadeInUp" data-wow-duration='1s' data-wow-delay="0.2s">
-<div class="option-1">
+				<div class="option-1">
 					<div class="option-description">
 						<a href="descriptions.html">
-						<img src="svg/description.svg">
+							<img src="svg/description.svg">
 
 							<p>Description</p>
 						</a>
 					</div>
-</div>
+				</div>
 				<div class="option-1">
-				<div class="option-design">
-					<a href="design.html">
-						<img src="svg/design.svg">
+					<div class="option-design">
+						<a href="design.html">
+							<img src="svg/design.svg">
 
-						<p>Design</p>
-					</a>
-				</div>
-				</div>
-
-					<div class="option-1">
-				<div class="option-HP">
-					<a href="HP%20overview.html">
-						<img src="svg/education.svg">
-
-						<p>Human Practice</p>
-					</a>
-				</div>
+							<p>Design</p>
+						</a>
 					</div>
-
-						<div class="option-1">
-				<div class="option-model">
-					<a href="models.html">
-						<img src="svg/model.svg">
-
-						<p>Model</p>
-					</a>
 				</div>
-						</div>
+
+				<div class="option-1">
+					<div class="option-HP">
+						<a href="HP%20overview.html">
+							<img src="svg/education.svg">
+
+							<p>Human Practice</p>
+						</a>
+					</div>
+				</div>
+
+				<div class="option-1">
+					<div class="option-model">
+						<a href="models.html">
+							<img src="svg/model.svg">
+                              <p>Model</p>
+						</a>
+					</div>
+				</div>
 
 			</div>
 		</div>
 
 
 
-	</div> <!-- .index-articles -->
+	</div>
 
 
 	<!-- /第二版面 -->
+
 	<!-- 底部begin -->
 	<footer class="footer">
 		<ul class="autoWidth">
@@ -270,7 +289,7 @@
 	<!-- 底部end -->
 
 	<!-- 文章目录 -->
-	<script src="plugins/201512221545/js/jquery-2.1.1.min.js"></script>
+	<!-- <script src="plugins/201512221545/js/jquery-2.1.1.min.js"></script> -->
 	<script src="plugins/201512221545/js/main.js"></script> <!-- Resource jQuery -->
 	<!-- /文章目录 -->
 	<script src="js/wow.min.js"></script>
@@ -281,11 +300,11 @@
 		// 	new WOW().init();
 		// };
 		var wow = new WOW({
-			boxClass:'wow',
-		animateClass: 'animated',
-		offset: 0,
-				mobile: true,
-				live: true
+			boxClass: 'wow',
+			animateClass: 'animated',
+			offset: 0,
+			mobile: true,
+			live: true
 		});
 		wow.init();
 

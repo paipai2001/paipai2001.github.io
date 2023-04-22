@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGEM</title>
+    <!-- 插件引入需要begin -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins\201711041506\css\bootsnav.css">
+    <link rel="stylesheet" href="css/plugin-nav.css">
+    <link rel="stylesheet" href="css/experiment.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="plugins\201711041506\js\bootsnav.js"></script>
+    <!-- ======================== -->
+
+    <!-- 插件引入需要end -->
+    <!-- 公用部分begin -->
+    <link href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/common.js"></script>
+    <!-- 公用部分end -->
+    <link rel="stylesheet" href="css/member.css">
+    <!-- <link rel="stylesheet" type="text/css" href="plugins/201707291520/css/normalize.css" /> -->
+    <!-- full-page -->
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <!-- jquery.easings.min.js 是必须的，用于 easing 参数，也可以使用完整的 jQuery UI 代替 -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/mypage.js"></script>
+    <!-- fullpage -->
+</head>
+
+<body>
+    <!--loading-->
+    <div id="loading">
+        <p id="loading-one"></p>
+        <div class="circle"></div>
+        <div class="circle1"></div>
+    </div>
+
+    <!-- 背景 -->
+    <!-- <div class="htmleaf-container">
+		<canvas id="canvas"></canvas>
+	</div> -->
+    <!-- /背景 -->
+    <!-- 导航栏begin -->
+    <header class="nav_header">
+        <div class="nav_container diySettings">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-default navbar-mobile bootsnav on">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#navbar-menu">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbar-menu">
+                            <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
+                                <!-- 选项卡begin -->
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">team</a>
+                                    <ul class="dropdown-menu animated">
+                                        <li><a href="members.html">Members</a></li>
+                                        <li><a href="#">Collaborations</a></li>
+                                        <li><a href="#">Partnership</a></li>
+                                        <li><a href="attributions.html">Attributions</a></li>
+                                        <li><a href="notebook.html">Notebook</a></li>
+                                        <li><a href="experiment.html">Experiments</a></li>
+                                        <li><a href="#">Safety</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">project</a>
+                                    <ul class="dropdown-menu animated">
+                                        <li><a href="descriptions.html">Descriptions</a></li>
+                                        <li><a href="design.html">Design</a></li>
+                                        <li><a href="models.html">Models</a></li>
+                                        <li><a href="result.html">Result</a></li>
+                                        <li><a href="proof of concept.html">Proof of Concept</a></li>
+                                        <li><a href="hardware.html">Hardware</a></li>
+                                        <li><a href="propose implementation.html">Proposed Implementation</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">parts</a>
+                                    <ul class="dropdown-menu animated">
+                                        <li><a href="parts.html">Parts</a></li>
+                                        <li><a href="contributions.html">Contributions</a></li>
+                                        <li><a href="Improve.html">Improve</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">human practices</a>
+                                    <ul class="dropdown-menu animated">
+                                        <li><a href="HP overview.html">Overview</a></li>
+                                        <li><a href="Science%20Communication.html">Science communication</a></li>
+                                        <li><a href="Supporting.html">Supporting Entrepreneurship</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">awards</a>
+                                    <ul class="dropdown-menu animated">
+                                        <li><a href="awards.html">Judging</a></li>
+                                    </ul>
+                                </li>
+                                <!-- 选项卡end -->
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="index.html"><img src="images\logo.png" alt=""></a>
+        </div>
+    </header>
+    <!-- 导航栏end -->
+    <!-- 版头 -->
+    <div id="fullpage">
+        <div class="section">
+            <div class="croped">
+                <p class="croped-title">Experiments</p>
+                <div class="bkg-img"></div>
+            </div>
+        </div>
+        <!-- /版头 -->
+        <div class="section section1">
+            <div class="cloud x1"></div>
+            <div class="cloud x2"></div>
+            <div class="text">
+                <p>Etiam nec erat malesuada, volutpat purus ut, euismod neque. Nullam nec tellus vel dolor mollis
+                    facilisis eget ut risus. Ut vitae ante eget tellus pellentesque dignissim at eget ex. Vivamus nec
+                    enim fermentum, facilisis odio et, pretium nisi. Maecenas rhoncus sapien enim, vel bibendum purus
+                    dictum eu. In euismod quam nec velit interdum, sit amet sagittis eros congue. Nulla vitae turpis in
+                    arcu dictum vestibulum. Sed finibus luctus ante, quis sollicitudin ipsum vulputate at. Proin varius
+                    nulla leo, eu porttitor nulla maximus a. Vivamus nec bibendum est. Duis nec orci hendrerit,
+                    facilisis lorem ac, semper nibh. Proin accumsan, enim vel pretium suscipit, turpis purus faucibus
+                    felis, eget convallis orci nunc sit amet ex.</p>
+            </div>
+            <div class="cloud x3"></div>
+            <div class="cloud x4"></div>
+            <div class="cloud x5"></div>
+        </div>
+        <div class="section section2">
+        </div>
+        <div class="section section3">
+            <!-- 图片翻页效果 -->
+            
+            <div class='pages'>
+                <input id='one' name='trigger' type='radio'>
+                <input id='two' name='trigger' type='radio'>
+                <input id='three' name='trigger' type='radio'>
+                <input id='four' name='trigger' type='radio'>
+                <div class='pages_page'>
+                  <div class='pages_page__inner'>
+                    <div class='logo'>Fashion</div>
+                    <div class='pagenumber'>1 2</div>
+                    <div class='content'>
+                      <div class='content_center'>
+                        <h4>The latest in fashion & fashion design</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='pages_page'>
+                  <div class='pages_page__inner'>
+                    <div class='content'>
+                      <div class='content_center right'>
+                        <h4>The latest in fashion & fashion design</h4>
+                      </div>
+                      <div class='overlay'></div>
+                    </div>
+                    <div class='control next'>
+                      <label for='two'></label>
+                    </div>
+                  </div>
+                </div>
+                <div class='pages_page'>
+                  <div class='pages_page__inner'>
+                    <div class='logo'>Fashion</div>
+                    <div class='pagenumber'>2 3</div>
+                    <div class='control'>
+                      <label for='one'></label>
+                    </div>
+                    <div class='content'>
+                      <div class='content_picture'>
+                        <img src='https://news.broncolor.swiss/wp-content/uploads/2017/03/Bild01.jpg'>
+                      </div>
+                      <div class='content_offset'>
+                        <h2>Subtitle</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum sapien posuere ut. Nunc eget ullamcorper turpis. Sed in vehicula magna, vitae eleifend velit. Donec dui turpis, viverra vitae lobortis commodo, lobortis et ex.</p>
+                      </div>
+                      <h1>
+                        <span>L</span>
+                        <span>o</span>
+                        <span>o</span>
+                        <span>k</span>
+                        <span> </span>
+                        <span>a</span>
+                        <span>t</span>
+                        <span> </span>
+                        <span>t</span>
+                        <span>h</span>
+                        <span>i</span>
+                        <span>s</span>
+                        <span> </span>
+                        <span>a</span>
+                        <span>w</span>
+                        <span>e</span>
+                        <span>s</span>
+                        <span>o</span>
+                        <span>m</span>
+                        <span>e</span>
+                        <br>
+                        <span>h</span>
+                        <span>e</span>
+                        <span>a</span>
+                        <span>d</span>
+                        <span>l</span>
+                        <span>i</span>
+                        <span>n</span>
+                        <span>e</span>
+                        <span> </span>
+                        <span>r</span>
+                        <span>i</span>
+                        <span>g</span>
+                        <span>h</span>
+                        <span>t</span>
+                        <span> </span>
+                        <span>h</span>
+                        <span>e</span>
+                        <span>r</span>
+                        <span>e</span>
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                <div class='pages_page'>
+                  <div class='pages_page__inner'>
+                    <div class='hamburger'>
+                      <div class='hamburger_part'></div>
+                      <div class='hamburger_part'></div>
+                      <div class='hamburger_part'></div>
+                    </div>
+                    <div class='control next'>
+                      <label for='three'></label>
+                    </div>
+                    <div class='bg'></div>
+                    <div class='footer'>
+                      <i class="fab fa-google-plus-g"></i>
+                      <i class="fas fa-retweet"></i>
+                      <i class="far fa-heart"></i>
+                      <i class="far fa-share-square"></i>
+                    </div>
+                    <div class='content'>
+                      <div class='content_quote'>
+                        <h5>
+                          <span class='quo'>
+                            <i>"</i>
+                          </span>
+                          <span>This is a quote</span>
+                          <span>from someone</span>
+                          <span class='name'>Jamie Coulter</span>
+                          <span class='auth'>- Jcoulterdesign</span>
+                          <span class='quo'>"</span>
+                        </h5>
+                      </div>
+                      <div class='content_picture'>
+                        <img src='https://news.broncolor.swiss/wp-content/uploads/2017/03/Bild01.jpg'>
+                      </div>
+                      <h1>
+                        <span>L</span>
+                        <span>o</span>
+                        <span>o</span>
+                        <span>k</span>
+                        <span> </span>
+                        <span>a</span>
+                        <span>t</span>
+                        <span> </span>
+                        <span>t</span>
+                        <span>h</span>
+                        <span>i</span>
+                        <span>s</span>
+                        <span> </span>
+                        <span>a</span>
+                        <span>w</span>
+                        <span>e</span>
+                        <span>s</span>
+                        <span>o</span>
+                        <span>m</span>
+                        <span>e</span>
+                        <br>
+                        <span>h</span>
+                        <span>e</span>
+                        <span>a</span>
+                        <span>d</span>
+                        <span>l</span>
+                        <span>i</span>
+                        <span>n</span>
+                        <span>e</span>
+                        <span> </span>
+                        <span>r</span>
+                        <span>i</span>
+                        <span>g</span>
+                        <span>h</span>
+                        <span>t</span>
+                        <span> </span>
+                        <span>h</span>
+                        <span>e</span>
+                        <span>r</span>
+                        <span>e</span>
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                <div class='pages_page'>
+                  <div class='pages_page__inner'>
+                    <div class='logo'>Fashion</div>
+                    <div class='pagenumber'>4 5</div>
+                    <div class='content'>
+                      <div class='content_center'>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                        <h6>Lorem ipsum dolor sit amet</h6>
+                      </div>
+                    </div>
+                    <div class='control'>
+                      <label for='two'></label>
+                    </div>
+                  </div>
+                </div>
+                <div class='pages_page'>
+                  <div class='pages_page__inner'>
+                    <div class='hamburger'>
+                      <div class='hamburger_part'></div>
+                      <div class='hamburger_part'></div>
+                      <div class='hamburger_part'></div>
+                    </div>
+                    <div class='control next'>
+                      <label for='four'></label>
+                    </div>
+                    <div class='bg'></div>
+                    <div class='content_centerimage'>
+                      <img src='https://profoto.azureedge.net/cdn/049e042/contentassets/f00fdbc1a7764964bd7f6c48f288cb05/profoto-collapsible-reflectors-rossella-vanon-fashion-photography-img_2013-600x900.jpg?width=1280&quality=75&format=jpg'>
+                    </div>
+                    <div class='content'>
+                      <div class='content_center right'>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                        <h6>Lorem ipsum dolor sit amet</h6>
+                      </div>
+                    </div>
+                    <div class='footer'>
+                      <i class="fab fa-google-plus-g"></i>
+                      <i class="fas fa-retweet"></i>
+                      <i class="far fa-heart"></i>
+                      <i class="far fa-share-square"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class='pages_page'>
+                  <div class='pages_page__inner'>
+                    <div class='logo'>Fashion</div>
+                    <div class='pagenumber'>6 7</div>
+                    <div class='content'>
+                      <div class='content_section'>
+                        <h2>Super</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum sapien posuere ut. Nunc eget ullamcorper turpis. Sed in vehicula magna, vitae eleifend velit.</p>
+                      </div>
+                      <div class='content_section'>
+                        <h2>Awesome</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum sapien posuere ut. Nunc eget ullamcorper turpis. Sed in vehicula magna, vitae eleifend velit.</p>
+                      </div>
+                      <div class='content_section'>
+                        <h2>Great</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum sapien posuere ut. Nunc eget ullamcorper turpis. Sed in vehicula magna.</p>
+                      </div>
+                    </div>
+                    <div class='control'>
+                      <label for='three'></label>
+                    </div>
+                  </div>
+                </div>
+                <div class='pages_page'>
+                  <div class='pages_page__inner'>
+                    <div class='hamburger'>
+                      <div class='hamburger_part'></div>
+                      <div class='hamburger_part'></div>
+                      <div class='hamburger_part'></div>
+                    </div>
+                    <div class='bg'></div>
+                    <div class='content'></div>
+                    <div class='footer'>
+                      <i class="fab fa-google-plus-g"></i>
+                      <i class="fas fa-retweet"></i>
+                      <i class="far fa-heart"></i>
+                      <i class="far fa-share-square"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- 图片翻页效果 -->
+        </div>
+    </div>
+    <!-- 底部begin -->
+    <footer class="footer">
+        <ul class="autoWidth">
+            <li class="autoWidth">iGEM</li>
+            <li>Copyright © 2023-2024</li>
+        </ul>
+    </footer>
+    <!-- 底部end -->
+</body>
+
+</html>

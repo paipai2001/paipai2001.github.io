@@ -10,12 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IGEM</title>
     <!-- 插件引入需要begin -->
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="plugins\201711041506\css\bootsnav.css">
     <link rel="stylesheet" href="css/plugin-nav.css">
-    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="plugins\201711041506\js\bootsnav.js"></script>
     <!-- ======================== -->
     <link rel="stylesheet" href="plugins/201512221545/css/reset.css"> <!-- CSS reset -->
@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="css/member.css">
     <link rel="stylesheet" href="css/description.css">
     <!-- 返回首部 -->
-    <script src="http://www.jq22.com/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://www.jq22.com/jquery/1.8.3/jquery.min.js"></script>
 
     <script type="text/javascript" src="toTop.js"></script>
     <!--  -->
@@ -44,185 +44,290 @@
 </head>
 
 <body>
-<!-- 背景 -->
-<!-- <div class="htmleaf-container">
+<!--loading-->
+<div id="loading"> <p id="loading-one"></p > <div class="circle"></div> <div class="circle1"></div> </div>
+    <!-- 背景 -->
+    <!-- <div class="htmleaf-container">
     <canvas id="canvas"></canvas>
 </div> -->
-<!-- /背景 -->
-<!-- 导航栏begin -->
-<header class="nav_header">
-    <div class="nav_container diySettings">
-        <div class="row">
-            <div class="col-md-12">
-                <nav class="navbar navbar-default navbar-mobile bootsnav on">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+    <!-- /背景 -->
+    <!-- 导航栏begin -->
+    <header class="nav_header">
+        <div class="nav_container diySettings">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-default navbar-mobile bootsnav on">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
                                 data-target="#navbar-menu">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbar-menu">
-                        <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
-                            <!-- 选项卡begin -->
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">team</a>
-                                <ul class="dropdown-menu animated">
-                                    <li><a href="members.html">Members</a></li>
-                                    <li><a href="#">Collaborations</a></li>
-                                    <li><a href="#">Partnership</a></li>
-                                    <li><a href="#">Attributions</a></li>
-                                    <li><a href="notebook.html">Notebook</a></li>
-                                    <li><a href="#">Experiments</a></li>
-                                    <li><a href="#">Safety</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">project</a>
-                                <ul class="dropdown-menu animated">
-                                    <li><a href="descriptions.html">Descriptions</a></li>
-                                    <li><a href="design.html">Design</a></li>
-                                    <li><a href="models.html">Models</a></li>
-                                    <li><a href="result.html">Result</a></li>
-                                    <li><a href="proof of concept.html">Proof of Concept</a></li>
-                                    <li><a href="hardware.html">Hardware</a></li>
-                                    <li><a href="propose implementation.html">Proposed Implementation</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">parts</a>
-                                <ul class="dropdown-menu animated">
-                                    <li><a href="parts.html">Parts</a></li>
-                                    <li><a href="contributions.html">Contributions</a></li>
-                                    <li><a href="Improve.html">Improve</a></li>
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbar-menu">
+                            <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
+                                <!-- 选项卡begin -->
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">team</a>
+                                    <ul class="dropdown-menu animated">
+                                        <li><a href="members.html">Members</a></li>
+                                        <li><a href="#">Collaborations</a></li>
+                                        <li><a href="#">Partnership</a></li>
+                                        <li><a href="attributions.html">Attributions</a></li>
+                                        <li><a href="notebook.html">Notebook</a></li>
+                                        <li><a href="experiment.html">Experiments</a></li>
+                                        <li><a href="#">Safety</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">project</a>
+                                    <ul class="dropdown-menu animated">
+                                        <li><a href="descriptions.html">Descriptions</a></li>
+                                        <li><a href="design.html">Design</a></li>
+                                        <li><a href="models.html">Models</a></li>
+                                        <li><a href="result.html">Result</a></li>
+                                        <li><a href="proof of concept.html">Proof of Concept</a></li>
+                                        <li><a href="hardware.html">Hardware</a></li>
+                                        <li><a href="propose implementation.html">Proposed Implementation</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">parts</a>
+                                    <ul class="dropdown-menu animated">
+                                        <li><a href="parts.html">Parts</a></li>
+                                        <li><a href="contributions.html">Contributions</a></li>
+                                        <li><a href="Improve.html">Improve</a></li>
 
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">human practices</a>
-                                <ul class="dropdown-menu animated">
-                                    <li><a href="HP overview.html">Overview</a></li>
-                                    <li><a href="Science%20Communication.html">Science communication</a></li>
-                                    <li><a href="Supporting.html">Supporting Entrepreneurship</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">awards</a>
-                                <ul class="dropdown-menu animated">
-                                    <li><a href="awards.html">Judging</a></li>
-                                </ul>
-                            </li>
-                            <!-- 选项卡end -->
-                        </ul>
-                    </div>
-                </nav>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">human practices</a>
+                                    <ul class="dropdown-menu animated">
+                                        <li><a href="HP overview.html">Overview</a></li>
+                                        <li><a href="Science%20Communication.html">Science communication</a></li>
+                                        <li><a href="Supporting.html">Supporting Entrepreneurship</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">awards</a>
+                                    <ul class="dropdown-menu animated">
+                                        <li><a href="awards.html">Judging</a></li>
+                                    </ul>
+                                </li>
+                                <!-- 选项卡end -->
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
+        <div class="logo">
+            <a href="index.html"><img src="images\logo.png" alt=""></a>
+        </div>
+    </header>
+    <!-- 导航栏end -->
+    <!-- 版头 -->
+    <div class="croped">
+        <p class="croped-title">Notebook</p>
+        <div class="bkg-img"></div>
+        <!--        <img src="images/upper-background.png" alt="">-->
     </div>
-    <div class="logo">
-        <a href="index.html"><img src="images\logo.png" alt=""></a>
+
+
+
+
+    <div class="notebook-articles">
+        <div class="notebook-main">
+            <article>
+                <details class="notebook-articles-dropdown">
+                    <summary>
+                        <h2 id="one">Week 1</h2>
+                    </summary>
+                    <hr>
+                    <p>
+                        Plastics are in high demand in several industrial sectors, such as packaging, healthcare,
+                        fisheries, and
+                        agriculture, due to their enhanced physicochemical properties (Geyer et al., 2017). Recent
+                        plastic waste
+                        disposal solutions involve landfill, incineration, and recycling. However, landfill and
+                        incineration are
+                        undesirable as they result in environmental pollution and harmful effects on wildlife, damaging
+                        the
+                        environment and releasing toxicants (Oehlmann et al., 2009). On the other hand, recycled
+                        plastics are
+                        generally of inferior quality compared to the original, and some plastic recycling methods
+                        (waste-to-energy plants) involve incineration of plastic wastes to release energy, which could
+                        potentially emit toxic pollutants such as dioxins, acid gases, and heavy metals (Subramanian,
+                        2019).
+                        Therefore, many of the current waste treatment practices are still far from ideal due to their
+                        harmful
+                        effects on the environment.
+                    </p>
+                </details>
+
+            </article>
+
+            <article>
+                <details class="notebook-articles-dropdown">
+                    <summary>
+                        <h2 id="two">Week 2</h2>
+                    </summary>
+                    <hr>
+                    <p>
+                        Plastics are in high demand in several industrial sectors, such as packaging, healthcare,
+                        fisheries, and
+                        agriculture, due to their enhanced physicochemical properties (Geyer et al., 2017). Recent
+                        plastic waste
+                        disposal solutions involve landfill, incineration, and recycling. However, landfill and
+                        incineration are
+                        undesirable as they result in environmental pollution and harmful effects on wildlife, damaging
+                        the
+                        environment and releasing toxicants (Oehlmann et al., 2009). On the other hand, recycled
+                        plastics are
+                        generally of inferior quality compared to the original, and some plastic recycling methods
+                        (waste-to-energy plants) involve incineration of plastic wastes to release energy, which could
+                        potentially emit toxic pollutants such as dioxins, acid gases, and heavy metals (Subramanian,
+                        2019).
+                        Therefore, many of the current waste treatment practices are still far from ideal due to their
+                        harmful
+                        effects on the environment.
+                    </p>
+                </details>
+
+            </article>
+
+            <article>
+                <details class="notebook-articles-dropdown">
+                    <summary>
+                        <h2 id="three">Week 3</h2>
+                    </summary>
+                    <hr>
+                    <p>
+                        Plastics are in high demand in several industrial sectors, such as packaging, healthcare,
+                        fisheries, and
+                        agriculture, due to their enhanced physicochemical properties (Geyer et al., 2017). Recent
+                        plastic waste
+                        disposal solutions involve landfill, incineration, and recycling. However, landfill and
+                        incineration are
+                        undesirable as they result in environmental pollution and harmful effects on wildlife, damaging
+                        the
+                        environment and releasing toxicants (Oehlmann et al., 2009). On the other hand, recycled
+                        plastics are
+                        generally of inferior quality compared to the original, and some plastic recycling methods
+                        (waste-to-energy plants) involve incineration of plastic wastes to release energy, which could
+                        potentially emit toxic pollutants such as dioxins, acid gases, and heavy metals (Subramanian,
+                        2019).
+                        Therefore, many of the current waste treatment practices are still far from ideal due to their
+                        harmful
+                        effects on the environment.
+                    </p>
+                </details>
+            </article>
+
+            <article>
+                <details class="notebook-articles-dropdown">
+                    <summary>
+                        <h2 id="four">Week 4</h2>
+                    </summary>
+                    <hr>
+                    <p>
+                        Plastics are in high demand in several industrial sectors, such as packaging, healthcare,
+                        fisheries, and
+                        agriculture, due to their enhanced physicochemical properties (Geyer et al., 2017). Recent
+                        plastic waste
+                        disposal solutions involve landfill, incineration, and recycling. However, landfill and
+                        incineration are
+                        undesirable as they result in environmental pollution and harmful effects on wildlife, damaging
+                        the
+                        environment and releasing toxicants (Oehlmann et al., 2009). On the other hand, recycled
+                        plastics are
+                        generally of inferior quality compared to the original, and some plastic recycling methods
+                        (waste-to-energy plants) involve incineration of plastic wastes to release energy, which could
+                        potentially emit toxic pollutants such as dioxins, acid gases, and heavy metals (Subramanian,
+                        2019).
+                        Therefore, many of the current waste treatment practices are still far from ideal due to their
+                        harmful
+                        effects on the environment.
+                    </p>
+                </details>
+
+
+            </article>
+        </div>
+
+
+        <!-- 导航侧边栏 -->
+        <div class="menu-all-content">
+            <div class="menu-box">
+                <!-- 展示与隐藏侧边栏 开始-->
+                <input type="checkbox" id="menu-btn">
+                <label for="menu-btn"><i class="iconfont icon-fanhui"></i></label>
+                <!-- 展示与隐藏侧边栏 结束-->
+                <div class="menu">
+                    <!-- 侧边栏的标题 开始-->
+                    <div class="menu-item menu-title">
+                        <input type="checkbox" id="menu-item0">
+                        <label for="menu-item0">
+                            <a href="#">
+                                <i class="menu-item-icon iconfont icon-menu"></i>
+                                <span>Menu</span>
+                            </a>
+                        </label>
+                    </div>
+                    <!-- 侧边栏的标题 结束-->
+
+                    <!-- 每一项导航 -->
+                    <div class="menu-item">
+                        <input type="checkbox" id="menu-item1">
+                        <label for="menu-item1">
+                            <i class="menu-item-icon iconfont icon-biaoqian"></i>
+                            <span>navigation1</span>
+                            <i class="menu-item-last iconfont icon-xiajiantou"></i>
+                        </label>
+                        <div class="menu-content">
+                            <span><a href="#one">Week 1</a></span>
+                            <span><a href="#two">Week 2</a></span>
+                            <span><a href="#three">Week 3</a></span>
+                            <span><a href="#four">Week 4</a></span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <input type="checkbox" id="menu-item2">
+                        <label for="menu-item2">
+                            <i class="menu-item-icon iconfont icon-biaoqian"></i>
+                            <span>navigation2</span>
+                            <i class="menu-item-last iconfont icon-xiajiantou"></i>
+                        </label>
+                        <div class="menu-content">
+                            <span>option1</span>
+                            <span>option2</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <input type="checkbox" id="menu-item3">
+                        <label for="menu-item3">
+                            <i class="menu-item-icon iconfont icon-biaoqian"></i>
+                            <span>navigation3</span>
+                            <i class="menu-item-last iconfont icon-xiajiantou"></i>
+                        </label>
+                        <div class="menu-content">
+                            <span>option1</span>
+                            <span>option2</span>
+                            <span>option3</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
-</header>
-<!-- 导航栏end -->
-<!-- 版头 -->
-<div class="croped">
-    <p class="croped-title">Notebook</p>
-    <div class="bkg-img"></div>
-    <!--        <img src="images/upper-background.png" alt="">-->
-</div>
-
-<div class="notebook-articles">
-    <article>
-        <details class="notebook-articles-dropdown">
-            <summary><h2 id = "one">Week 1</h2> </summary>
-            <hr>
-            <p>
-                Plastics are in high demand in several industrial sectors, such as packaging, healthcare, fisheries, and
-                agriculture, due to their enhanced physicochemical properties (Geyer et al., 2017). Recent plastic waste
-                disposal solutions involve landfill, incineration, and recycling. However, landfill and incineration are
-                undesirable as they result in environmental pollution and harmful effects on wildlife, damaging the
-                environment and releasing toxicants (Oehlmann et al., 2009). On the other hand, recycled plastics are
-                generally of inferior quality compared to the original, and some plastic recycling methods
-                (waste-to-energy plants) involve incineration of plastic wastes to release energy, which could
-                potentially emit toxic pollutants such as dioxins, acid gases, and heavy metals (Subramanian, 2019).
-                Therefore, many of the current waste treatment practices are still far from ideal due to their harmful
-                effects on the environment.
-            </p>
-        </details>
-
-    </article>
-
-    <article>
-        <details class="notebook-articles-dropdown">
-            <summary><h2 id = "two">Week 2</h2> </summary>
-            <hr>
-            <p>
-                Plastics are in high demand in several industrial sectors, such as packaging, healthcare, fisheries, and
-                agriculture, due to their enhanced physicochemical properties (Geyer et al., 2017). Recent plastic waste
-                disposal solutions involve landfill, incineration, and recycling. However, landfill and incineration are
-                undesirable as they result in environmental pollution and harmful effects on wildlife, damaging the
-                environment and releasing toxicants (Oehlmann et al., 2009). On the other hand, recycled plastics are
-                generally of inferior quality compared to the original, and some plastic recycling methods
-                (waste-to-energy plants) involve incineration of plastic wastes to release energy, which could
-                potentially emit toxic pollutants such as dioxins, acid gases, and heavy metals (Subramanian, 2019).
-                Therefore, many of the current waste treatment practices are still far from ideal due to their harmful
-                effects on the environment.
-            </p>
-        </details>
-
-    </article>
-
-    <article>
-        <details class="notebook-articles-dropdown">
-            <summary><h2 id = "three">Week 3</h2> </summary>
-            <hr>
-            <p>
-                Plastics are in high demand in several industrial sectors, such as packaging, healthcare, fisheries, and
-                agriculture, due to their enhanced physicochemical properties (Geyer et al., 2017). Recent plastic waste
-                disposal solutions involve landfill, incineration, and recycling. However, landfill and incineration are
-                undesirable as they result in environmental pollution and harmful effects on wildlife, damaging the
-                environment and releasing toxicants (Oehlmann et al., 2009). On the other hand, recycled plastics are
-                generally of inferior quality compared to the original, and some plastic recycling methods
-                (waste-to-energy plants) involve incineration of plastic wastes to release energy, which could
-                potentially emit toxic pollutants such as dioxins, acid gases, and heavy metals (Subramanian, 2019).
-                Therefore, many of the current waste treatment practices are still far from ideal due to their harmful
-                effects on the environment.
-            </p>
-        </details>
-    </article>
-
-    <article>
-        <details class="notebook-articles-dropdown">
-            <summary><h2 id = "four">Week 4</h2> </summary>
-            <hr>
-            <p>
-                Plastics are in high demand in several industrial sectors, such as packaging, healthcare, fisheries, and
-                agriculture, due to their enhanced physicochemical properties (Geyer et al., 2017). Recent plastic waste
-                disposal solutions involve landfill, incineration, and recycling. However, landfill and incineration are
-                undesirable as they result in environmental pollution and harmful effects on wildlife, damaging the
-                environment and releasing toxicants (Oehlmann et al., 2009). On the other hand, recycled plastics are
-                generally of inferior quality compared to the original, and some plastic recycling methods
-                (waste-to-energy plants) involve incineration of plastic wastes to release energy, which could
-                potentially emit toxic pollutants such as dioxins, acid gases, and heavy metals (Subramanian, 2019).
-                Therefore, many of the current waste treatment practices are still far from ideal due to their harmful
-                effects on the environment.
-            </p>
-        </details>
 
 
-    </article>
-
-    <!-- 导航侧边栏 -->
-    <div class="shell">
-        <a href="#" class="box"><i class="iconfont icon-a-listview-rectangle"></i><span></span></a>
-        <a href="#one" class="box"><i class="iconfont icon-a-tag01"></i><span>Week1</span></a>
-        <a href="#two" class="box"><i class="iconfont icon-a-tag01"></i><span> Week2</span></a>
-        <a href="#three" class="box"><i class="iconfont icon-a-tag01"></i><span>Week3</span></a>
-        <a href="#four" class="box"><i class="iconfont icon-a-tag01"></i><span>Week4</span></a>
-    </div>
-</div>
 
 
-<!-- /文章版面 -->
+    <!-- /文章版面 -->
     <!-- 底部begin -->
     <footer class="footer">
         <ul class="autoWidth">

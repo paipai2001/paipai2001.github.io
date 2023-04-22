@@ -46,3 +46,18 @@ $(function () {
         setnav()
     })
 })
+
+
+
+// jQuery(function() {
+//     jQuery('#loading-one').empty().append('').parent().fadeOut('slow');
+//     jQuery('#loading').click(function() {
+//         jQuery('#loading').fadeOut('slow');
+//     });
+// });
+
+$(window).on('load',function handlePreloader() {
+    if ($('#loading').length) {
+        $('#loading').delay(200).fadeOut(500);
+    }
+});
