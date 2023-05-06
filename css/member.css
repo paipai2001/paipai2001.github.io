@@ -47,6 +47,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    background-color:#dfe4e5;
 }
 
 .croped::before, .croped::after {
@@ -55,7 +56,7 @@
     left: 50%;
     min-width: 300vw;
     min-height: 300vw;
-    background-color: #ffffff;
+    background-color: #dfe4e5;
     animation-name: rotate;
     animation-iteration-count: infinite;
     animation-timing-function: linear;

@@ -102,11 +102,17 @@ download button
 Articles
 
 -------------------------------- */
-.cd-articles {
+.main-article{
   position: relative;
-  width: 90%;
-  max-width: 650px;
-  margin: 0 auto 3em;
+  background-color:#dfe4e5;
+}
+.cd-articles {
+  /*position: relative;*/
+  /*width: 800px;*/
+  /*width: 90%;*/
+  /*max-width: 650px;*/
+  /*margin: 0 auto;*/
+  margin-left: 300px;
 }
 .cd-articles::before {
   /* never visible - this is used in jQuery to check the current MQ */
@@ -139,7 +145,7 @@ Articles
     width: 970px;
     max-width: none;
     padding-right: 320px;
-    margin-bottom: 5em;
+    /* margin-bottom: 5em; */
   }
   .cd-articles::before {
     /* never visible - this is used in jQuery to check the current MQ */
@@ -152,7 +158,11 @@ Articles
     font-size: 1.8rem;
   }
 }
-
+ .foot{
+  background-color: #dfe4e5;
+  
+  height: 64px;
+ }
 /* -------------------------------- 
 
 Aside
@@ -161,13 +171,14 @@ Aside
 .cd-read-more {
   /* hide on mobile */
   display: none;
-  width: 290px;
+  width: 200px;
   background-color: #f2f2f2;
 }
 .cd-read-more li {
   counter-increment: articles;
 }
 .cd-read-more a {
+  text-decoration: none;
   display: block;
   position: relative;
   padding: 1.6em 1.1em 1.6em 4.3em;
@@ -210,7 +221,7 @@ Aside
   transform: translateX(-50%);
   bottom: 0;
   height: 1px;
-  width: 260px;
+  width: 200px;
   background-color: #d9d9d9;
 }
 .cd-read-more a.read em {
@@ -245,12 +256,7 @@ Aside
   -moz-transition: color 0.3s;
   transition: color 0.3s;
 }
-.cd-read-more b {
-  color: #a6a6a6;
-  font-size: 1.2rem;
-  font-family: Georgia, serif;
-  font-style: italic;
-}
+
 .cd-read-more svg {
   /* this is the filling circle around the article number */
   display: none;
@@ -271,10 +277,10 @@ Aside
     position: absolute;
     /* 修改目录高度 */
     top: 6em;
-    right: 0;
+    left: calc(40% - 500px);
   }
   .cd-read-more.fixed {
     position: fixed;
-    right: calc(50% - 485px);
+    left: calc(40% - 500px);
   }
 }

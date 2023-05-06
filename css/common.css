@@ -67,11 +67,28 @@ nav.navbar.bootsnav ul.nav li ul li a:hover {
 /* /修改背景 */
 
 /* 修改文章板块 */
-.cd-articles .cd-read-more{
+.cd-read-more{
     border-radius: 10px;
-    background-color: #fff;
+    /*background-color: #fff;*/
     color: #363636;
+    margin: 0 auto;
 }
+
+.cd-articles {
+    padding: 20px;
+    width: 1089px;
+    /* border-radius: 20px; */
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    /* margin-bottom: 10px; */
+
+}
+
+.cd-read-more{
+    background-color: white;
+
+}
+
 /* /修改文章板块 */
 
 .demo {

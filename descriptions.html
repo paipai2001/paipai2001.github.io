@@ -22,7 +22,9 @@
     <link rel="stylesheet" type="text/css" href="plugins/201512221545/css/default.css">
     <link rel="stylesheet" href="plugins/201512221545/css/style.css"> <!-- Resource style -->
     <script src="plugins/201512221545/js/modernizr.js"></script> <!-- Modernizr -->
+    
     <!-- 插件引入需要end -->
+    <link rel="stylesheet" href="css/animate.min.css">
     <!-- 公用部分begin -->
     <link href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
@@ -33,7 +35,9 @@
     <!-- 返回首部 -->
     <script src="https://www.jq22.com/jquery/1.8.3/jquery.min.js"></script>
 
-	<script type="text/javascript" src="toTop.js"></script>
+	<script type="text/javascript" src="js/toTop.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/safety.js"></script>
     <!--  -->
 </head>
 
@@ -128,13 +132,14 @@
     </div>
     <!-- /版头 -->
     <!-- 文章版面 -->
+<div class="main-article animated fadeIn wow">
     <div class="cd-articles">
         <article>
             <header>
-                <img src="plugins/201512221545/img/img-1.png" alt="article image">
-                <h1>Overview</h1>
+                <img src="plugins/201512221545/img/img-1.png" alt="article image" class="animated fadeIn wow">
+                <h1 class="animated fadeIn wow">Overview</h1>
             </header>
-
+   <div class="animated fadeIn wow">
             <p>
                 Plastics are in high demand in several industrial sectors, such as packaging, healthcare, fisheries, and
                 agriculture, due to their enhanced physicochemical properties (Geyer et al., 2017). Recent plastic waste
@@ -157,15 +162,15 @@
                 Proin accumsan, enim vel pretium suscipit, turpis purus faucibus felis, eget convallis orci nunc sit
                 amet ex.
             </p>
-
+  </div>
         </article>
 
         <article>
             <header>
-                <img src="plugins/201512221545/img/img-1.png" alt="article image">
-                <h1>Inspiration</h1>
+                <img src="plugins/201512221545/img/img-1.png" alt="article image" class="animated fadeIn wow">
+                <h1 class="animated fadeIn wow">Inspiration</h1>
             </header>
-
+   <div class="animated fadeIn wow">
             <p>
                 Asthma is a common disease with no cure and is a disease that is becoming more and more common. The
                 specific cause of asthma has not been determined but the general thought is that it is caused by genetic
@@ -181,15 +186,15 @@
                 algorithms and tools of bioinformatics. In our project, we will bridge this gap and also use it
                 ourselves to develop a biosensor for the detection of asthma.
             </p>
-
+  </div>
         </article>
 
         <article>
             <header>
-                <img src="plugins/201512221545/img/img-1.png" alt="article image">
-                <h1>ClusteRsy</h1>
+                <img src="plugins/201512221545/img/img-1.png" alt="article image" class="animated fadeIn wow">
+                <h1 class="animated fadeIn wow">ClusteRsy</h1>
             </header>
-
+<div class="animated fadeIn wow">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis sapien vel ipsum luctus aliquet.
                 Nulla facilisi. Sed nec semper ipsum. Integer sed nunc ac lectus lacinia malesuada non non ipsum. Proin
@@ -211,14 +216,15 @@
                 Proin accumsan, enim vel pretium suscipit, turpis purus faucibus felis, eget convallis orci nunc sit
                 amet ex.
             </p>
+        </div>
         </article>
 
         <article>
             <header>
-                <img src="plugins/201512221545/img/img-1.png" alt="article image">
-                <h1>Programming</h1>
+                <img src="plugins/201512221545/img/img-1.png" alt="article image" class="animated fadeIn wow">
+                <h1 class="animated fadeIn wow">Programming</h1>
             </header>
-
+<div class="animated fadeIn wow">
             <p>
                 The aim of the programming group was to create a software that was so intuitive that a user with no
                 previous knowledge of programming could utilize state-of-the-art algorithms to detect differentially
@@ -229,12 +235,7 @@
                 can use it. Meaning that the typical users with the RNA-sequencing such as clinicians and biologists
                 have troubles using these algorithms for their research. Today the RNA-sequencing data is sent to a
                 bioinformatician and analyzed. We in iGEM Linköping want to remove this stage and empower the clinicians
-                and biologists to analyze their RNA-sequencing data by themselves. Therefore we have created the
-                web-based software ClusteRsy. With ClusteRsy the user can upload a raw count matrix of transcriptomic
-                data and a PPI-network to be inferred, enriched, and visualized in four simple steps. The results can be
-                visualized and the results of each disease are extracted for further analysis. The modules which are
-                created can also be downloaded as Cytoscape objects for even further analysis of each gene is the
-                disease set.
+                and biologists to analyze their RNA-sequencing data by themselves. 
             </p>
             <p>
                 Etiam nec erat malesuada, volutpat purus ut, euismod neque. Nullam nec tellus vel dolor mollis facilisis
@@ -246,57 +247,65 @@
                 Proin accumsan, enim vel pretium suscipit, turpis purus faucibus felis, eget convallis orci nunc sit
                 amet ex.
             </p>
-
+</div>
         </article>
 
-        <aside class="cd-read-more">
-            <ul>
-                <li>
-                    <a href="descriptions.html">
-                        <em>Overview</em>
-                        <!-- <b>by J. Morrison</b> -->
-                        <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36">
-                            <circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100"
-                                stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="descriptions.html">
-                        <em>Inspiration</em>
-                        <!-- <b>by J. Morrison</b> -->
-                        <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36">
-                            <circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100"
-                                stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="descriptions.html">
-                        <em>ClusteRsy</em>
-                        <!-- <b>by J. Morrison</b> -->
-                        <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36">
-                            <circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100"
-                                stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="descriptions.html">
-                        <em>Programming</em>
-                        <!-- <b>by J. Morrison</b> -->
-                        <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36">
-                            <circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100"
-                                stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle>
-                        </svg>
-                    </a>
-                </li>
 
-            </ul>
-        </aside> <!-- .cd-read-more -->
-    </div> <!-- .cd-articles -->
+   <!-- .cd-articles -->
+<aside class="cd-read-more">
+    <ul>
+        <li>
+            <a href="descriptions.html">
+                <em>Overview</em>
+                <!-- <b>by J. Morrison</b> -->
+                <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36">
+                    <circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100"
+                            stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="descriptions.html">
+                <em>Inspiration</em>
+                <!-- <b>by J. Morrison</b> -->
+                <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36">
+                    <circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100"
+                            stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="descriptions.html">
+                <em>ClusteRsy</em>
+                <!-- <b>by J. Morrison</b> -->
+                <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36">
+                    <circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100"
+                            stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="descriptions.html">
+                <em>Programming</em>
+                <!-- <b>by J. Morrison</b> -->
+                <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36">
+                    <circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100"
+                            stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle>
+                </svg>
+            </a>
+        </li>
+
+    </ul>
+</aside> <!-- .cd-read-more -->
+    </div>
+   
+</div>
+
     <!-- /文章版面 -->
+    <div class = "foot">
+    </div>
     <!-- 底部begin -->
+
     <footer class="footer">
         <ul class="autoWidth">
             <li class="autoWidth">iGEM</li>
