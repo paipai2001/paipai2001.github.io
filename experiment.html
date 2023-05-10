@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <!--返回首部  -->
+    <meta name="toTop" content="true">
+    <!--  -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IGEM</title>
@@ -11,28 +14,33 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="plugins\201711041506\css\bootsnav.css">
     <link rel="stylesheet" href="css/plugin-nav.css">
-    <link rel="stylesheet" href="css/experiment.css">
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="plugins\201711041506\js\bootsnav.js"></script>
     <!-- ======================== -->
+    <link rel="stylesheet" href="plugins/201512221545/css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" type="text/css" href="plugins/201512221545/css/default.css">
+    <link rel="stylesheet" href="plugins/201512221545/css/style.css"> <!-- Resource style -->
+    <script src="plugins/201512221545/js/modernizr.js"></script> <!-- Modernizr -->
 
     <!-- 插件引入需要end -->
+    <link rel="stylesheet" href="css/animate.min.css">
     <!-- 公用部分begin -->
     <link href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
     <script src="js/common.js"></script>
     <!-- 公用部分end -->
     <link rel="stylesheet" href="css/member.css">
-    <!-- <link rel="stylesheet" type="text/css" href="plugins/201707291520/css/normalize.css" /> -->
-    <!-- full-page -->
-    <link rel="stylesheet" href="css/jquery.fullPage.css">
-    <!-- <script src="js/jquery.min.js"></script> -->
-    <!-- jquery.easings.min.js 是必须的，用于 easing 参数，也可以使用完整的 jQuery UI 代替 -->
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.fullPage.min.js"></script>
-    <script src="js/mypage.js"></script>
-    <!-- fullpage -->
+    <link rel="stylesheet" href="css/description.css">
+    <!-- 返回首部 -->
+    <script src="https://www.jq22.com/jquery/1.8.3/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/toTop.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/safety.js"></script>
+    <!--  -->
+    <link rel="icon" href="images/iGem.ico">
+    <link rel="stylesheet" href="css/experiment.css">
 </head>
 
 <body>
@@ -56,7 +64,7 @@
                     <nav class="navbar navbar-default navbar-mobile bootsnav on">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                    data-target="#navbar-menu">
+                                data-target="#navbar-menu">
                                 <i class="fa fa-bars"></i>
                             </button>
                         </div>
@@ -94,6 +102,7 @@
                                         <li><a href="contributions.html">Contributions</a></li>
                                         <li><a href="Engineering.html">Engineering</a></li>
                                         <li><a href="Improve.html">Improve</a></li>
+
                                     </ul>
                                 </li>
                                 <li class="dropdown">
@@ -123,290 +132,296 @@
     </header>
     <!-- 导航栏end -->
     <!-- 版头 -->
-    <div id="fullpage">
-        <div class="section">
-            <div class="croped">
-                <p class="croped-title">Experiments</p>
-                <div class="bkg-img"></div>
-            </div>
+    <div class="croped">
+        <p class="croped-title">Experiments</p>
+        <div class="bkg-img"></div>
+        <!--        <img src="images/upper-background.png" alt="">-->
+    </div>
+    <!-- /版头 -->
+    <!-- 文章版面 -->
+    <div class="main-article animated fadeIn wow">
+        <div class="cd-articles">
+            <article>
+                <header>
+                    <img src="plugins/201512221545/img/img-1.png" alt="article image" class="animated fadeIn wow">
+                    <h1 class="animated fadeIn wow">Overview</h1>
+                </header>
+                <div class="animated fadeIn wow">
+                    <p>
+                        Plastics are in high demand in several industrial sectors, such as packaging, healthcare,
+                        fisheries, and
+                        agriculture, due to their enhanced physicochemical properties (Geyer et al., 2017). Recent
+                        plastic waste
+                        disposal solutions involve landfill, incineration, and recycling. However, landfill and
+                        incineration are
+                        undesirable as they result in environmental pollution and harmful effects on wildlife, damaging
+                        the
+                        environment and releasing toxicants (Oehlmann et al., 2009). On the other hand, recycled
+                        plastics are
+                        generally of inferior quality compared to the original, and some plastic recycling methods
+                        (waste-to-energy plants) involve incineration of plastic wastes to release energy, which could
+                        potentially emit toxic pollutants such as dioxins, acid gases, and heavy metals (Subramanian,
+                        2019).
+                        Therefore, many of the current waste treatment practices are still far from ideal due to their
+                        harmful
+                        effects on the environment.
+                    </p>
+                    <p>
+                        Etiam nec erat malesuada, volutpat purus ut, euismod neque. Nullam nec tellus vel dolor mollis
+                        facilisis
+                        eget ut risus. Ut vitae ante eget tellus pellentesque dignissim at eget ex. Vivamus nec enim
+                        fermentum,
+                        facilisis odio et, pretium nisi. Maecenas rhoncus sapien enim, vel bibendum purus dictum eu. In
+                        euismod
+                        quam nec velit interdum, sit amet sagittis eros congue. Nulla vitae turpis in arcu dictum
+                        vestibulum.
+                        Sed finibus luctus ante, quis sollicitudin ipsum vulputate at. Proin varius nulla leo, eu
+                        porttitor
+                        nulla maximus a. Vivamus nec bibendum est. Duis nec orci hendrerit, facilisis lorem ac, semper
+                        nibh.
+                        Proin accumsan, enim vel pretium suscipit, turpis purus faucibus felis, eget convallis orci nunc
+                        sit
+                        amet ex.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <header>
+                    <img src="plugins/201512221545/img/img-1.png" alt="article image" class="animated fadeIn wow">
+                    <h1 class="animated fadeIn wow">Inspiration</h1>
+                </header>
+                <div class="animated fadeIn wow">
+                    <p>
+                        Asthma is a common disease with no cure and is a disease that is becoming more and more common.
+                        The
+                        specific cause of asthma has not been determined but the general thought is that it is caused by
+                        genetic
+                        and environmental factors. To diagnose asthma, crude methods are being used such as the basis of
+                        symptoms, response to certain therapies, and the use of spirometry. Several studies have shown
+                        that
+                        these physiological methods often lead to misdiagnosis [1]. We strongly believe that biomarkers
+                        and
+                        biosensor technology could be used to address this problem.</p>
+                    <p>
+                        In order to acquire molecular information about asthma we have focused our work on
+                        bioinformatics and
+                        more specifically RNA-sequencing and differentially expressed genes. The differentially
+                        expressed genes
+                        can tell us more molecular information about conditions and diseases. Currently, there is a gap
+                        between
+                        bioinformaticians and doctors. Most doctors do not have the time and routines to access the
+                        advanced
+                        algorithms and tools of bioinformatics. In our project, we will bridge this gap and also use it
+                        ourselves to develop a biosensor for the detection of asthma.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <header>
+                    <img src="plugins/201512221545/img/img-1.png" alt="article image" class="animated fadeIn wow">
+                    <h1 class="animated fadeIn wow">ClusteRsy</h1>
+                </header>
+                <div class="animated fadeIn wow">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis sapien vel ipsum luctus
+                        aliquet.
+                        Nulla facilisi. Sed nec semper ipsum. Integer sed nunc ac lectus lacinia malesuada non non
+                        ipsum. Proin
+                        finibus nulla non quam vehicula, eget mollis sapien tempor. Donec eu velit vel quam vestibulum
+                        iaculis
+                        vel non mi. Fusce eu massa in purus bibendum semper vel vel purus. Fusce a vulputate sapien.
+                        Aliquam
+                        interdum arcu at enim bibendum pharetra.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cum quibusdam eaque, autem
+                        porro fuga
+                        laudantium culpa beatae laboriosam quos.
+                    </p>
+                    <p>
+                        Etiam nec erat malesuada, volutpat purus ut, euismod neque. Nullam nec tellus vel dolor mollis
+                        facilisis
+                        eget ut risus. Ut vitae ante eget tellus pellentesque dignissim at eget ex. Vivamus nec enim
+                        fermentum,
+                        facilisis odio et, pretium nisi. Maecenas rhoncus sapien enim, vel bibendum purus dictum eu. In
+                        euismod
+                        quam nec velit interdum, sit amet sagittis eros congue. Nulla vitae turpis in arcu dictum
+                        vestibulum.
+                        Sed finibus luctus ante, quis sollicitudin ipsum vulputate at. Proin varius nulla leo, eu
+                        porttitor
+                        nulla maximus a. Vivamus nec bibendum est. Duis nec orci hendrerit, facilisis lorem ac, semper
+                        nibh.
+                        Proin accumsan, enim vel pretium suscipit, turpis purus faucibus felis, eget convallis orci nunc
+                        sit
+                        amet ex.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <header>
+                    <img src="plugins/201512221545/img/img-1.png" alt="article image" class="animated fadeIn wow">
+                    <h1 class="animated fadeIn wow">Programming</h1>
+                </header>
+                <div class="animated fadeIn wow">
+                    <p>
+                        The aim of the programming group was to create a software that was so intuitive that a user with
+                        no
+                        previous knowledge of programming could utilize state-of-the-art algorithms to detect
+                        differentially
+                        expressed genes. Advanced algorithms to detect differentially expressed genes in samples from
+                        RNA-sequencing have been developed at Linköpings University [2]. In order for the algorithms to
+                        be used
+                        knowledge regarding data pre-processing and optimizing parameters is key. This decreases the
+                        number of
+                        potential users to such an extent that only users with a background in bioinformatics and
+                        programming
+                        can use it. Meaning that the typical users with the RNA-sequencing such as clinicians and
+                        biologists
+                        have troubles using these algorithms for their research. Today the RNA-sequencing data is sent
+                        to a
+                        bioinformatician and analyzed. We in iGEM Linköping want to remove this stage and empower the
+                        clinicians
+                        and biologists to analyze their RNA-sequencing data by themselves.
+                    </p>
+                    <p>
+                        Etiam nec erat malesuada, volutpat purus ut, euismod neque. Nullam nec tellus vel dolor mollis
+                        facilisis
+                        eget ut risus. Ut vitae ante eget tellus pellentesque dignissim at eget ex. Vivamus nec enim
+                        fermentum,
+                        facilisis odio et, pretium nisi. Maecenas rhoncus sapien enim, vel bibendum purus dictum eu. In
+                        euismod
+                        quam nec velit interdum, sit amet sagittis eros congue. Nulla vitae turpis in arcu dictum
+                        vestibulum.
+                        Sed finibus luctus ante, quis sollicitudin ipsum vulputate at. Proin varius nulla leo, eu
+                        porttitor
+                        nulla maximus a. Vivamus nec bibendum est. Duis nec orci hendrerit, facilisis lorem ac, semper
+                        nibh.
+                        Proin accumsan, enim vel pretium suscipit, turpis purus faucibus felis, eget convallis orci nunc
+                        sit
+                        amet ex.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <header>
+                    <h1 class="animated fadeIn wow">Time-limitation</h1>
+                </header>
+                <div class="animated fadeIn wow">
+                    <!--  -->
+                    <div class="container1">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-timeline">
+                                    <div class="timeline">
+                                        <div class="timeline-icon"><span class="year">2018</span></div>
+                                        <div class="timeline-content">
+                                            <h3 class="title">Web Desginer</h3>
+                                            <p class="description">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia
+                                                mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline">
+                                        <div class="timeline-icon"><span class="year">2017</span></div>
+                                        <div class="timeline-content">
+                                            <h3 class="title">Web Developer</h3>
+                                            <p class="description">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia
+                                                mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline">
+                                        <div class="timeline-icon"><span class="year">2016</span></div>
+                                        <div class="timeline-content">
+                                            <h3 class="title">Web Desginer</h3>
+                                            <p class="description">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia
+                                                mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline">
+                                        <div class="timeline-icon"><span class="year">2015</span></div>
+                                        <div class="timeline-content">
+                                            <h3 class="title">Web Developer</h3>
+                                            <p class="description">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia
+                                                mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+    
+                </div>
+            </article>
+
+            <!-- .cd-articles -->
+            <aside class="cd-read-more">
+                <ul>
+                    <li>
+                        <a href="descriptions.html">
+                            <em>Overview</em>
+                            <!-- <b>by J. Morrison</b> -->
+                            <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36">
+                                <circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100"
+                                    stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="descriptions.html">
+                            <em>Inspiration</em>
+                            <!-- <b>by J. Morrison</b> -->
+                            <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36">
+                                <circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100"
+                                    stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="descriptions.html">
+                            <em>ClusteRsy</em>
+                            <!-- <b>by J. Morrison</b> -->
+                            <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36">
+                                <circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100"
+                                    stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="descriptions.html">
+                            <em>Programming</em>
+                            <!-- <b>by J. Morrison</b> -->
+                            <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36">
+                                <circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100"
+                                    stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle>
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
+            </aside> <!-- .cd-read-more -->
         </div>
-        <!-- /版头 -->
-        <div class="section section1">
-            <div class="cloud x1"></div>
-            <div class="cloud x2"></div>
-            <div class="text">
-                <p>Etiam nec erat malesuada, volutpat purus ut, euismod neque. Nullam nec tellus vel dolor mollis
-                    facilisis eget ut risus. Ut vitae ante eget tellus pellentesque dignissim at eget ex. Vivamus nec
-                    enim fermentum, facilisis odio et, pretium nisi. Maecenas rhoncus sapien enim, vel bibendum purus
-                    dictum eu. In euismod quam nec velit interdum, sit amet sagittis eros congue. Nulla vitae turpis in
-                    arcu dictum vestibulum. Sed finibus luctus ante, quis sollicitudin ipsum vulputate at. Proin varius
-                    nulla leo, eu porttitor nulla maximus a. Vivamus nec bibendum est. Duis nec orci hendrerit,
-                    facilisis lorem ac, semper nibh. </p>
-            </div>
-            <div class="cloud x3"></div>
-            <div class="cloud x4"></div>
-            <div class="cloud x5"></div>
-        </div>
-        <div class="section section2">
-        </div>
-        <div class="section section3">
-            <!-- 图片翻页效果 -->
-            
-            <div class='pages'>
-                <input id='one' name='trigger' type='radio'>
-                <input id='two' name='trigger' type='radio'>
-                <input id='three' name='trigger' type='radio'>
-                <input id='four' name='trigger' type='radio'>
-                <div class='pages_page'>
-                  <div class='pages_page__inner'>
-                    <div class='logo'>Fashion</div>
-                    <div class='pagenumber'>1 2</div>
-                    <div class='content'>
-                      <div class='content_center'>
-                        <h4>The latest in fashion & fashion design</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class='pages_page'>
-                  <div class='pages_page__inner'>
-                    <div class='content'>
-                      <div class='content_center right'>
-                        <h4>The latest in fashion & fashion design</h4>
-                      </div>
-                      <div class='overlay'></div>
-                    </div>
-                    <div class='control next'>
-                      <label for='two'></label>
-                    </div>
-                  </div>
-                </div>
-                <div class='pages_page'>
-                  <div class='pages_page__inner'>
-                    <div class='logo'>Fashion</div>
-                    <div class='pagenumber'>2 3</div>
-                    <div class='control'>
-                      <label for='one'></label>
-                    </div>
-                    <div class='content'>
-                      <div class='content_picture'>
-                        <img src='img/Bild01.jpg'>
-                      </div>
-                      <div class='content_offset'>
-                        <h2>Subtitle</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum sapien posuere ut. Nunc eget ullamcorper turpis. Sed in vehicula magna, vitae eleifend velit. Donec dui turpis, viverra vitae lobortis commodo, lobortis et ex.</p>
-                      </div>
-                      <h1>
-                        <span>L</span>
-                        <span>o</span>
-                        <span>o</span>
-                        <span>k</span>
-                        <span> </span>
-                        <span>a</span>
-                        <span>t</span>
-                        <span> </span>
-                        <span>t</span>
-                        <span>h</span>
-                        <span>i</span>
-                        <span>s</span>
-                        <span> </span>
-                        <span>a</span>
-                        <span>w</span>
-                        <span>e</span>
-                        <span>s</span>
-                        <span>o</span>
-                        <span>m</span>
-                        <span>e</span>
-                        <br>
-                        <span>h</span>
-                        <span>e</span>
-                        <span>a</span>
-                        <span>d</span>
-                        <span>l</span>
-                        <span>i</span>
-                        <span>n</span>
-                        <span>e</span>
-                        <span> </span>
-                        <span>r</span>
-                        <span>i</span>
-                        <span>g</span>
-                        <span>h</span>
-                        <span>t</span>
-                        <span> </span>
-                        <span>h</span>
-                        <span>e</span>
-                        <span>r</span>
-                        <span>e</span>
-                      </h1>
-                    </div>
-                  </div>
-                </div>
-                <div class='pages_page'>
-                  <div class='pages_page__inner'>
-                    <div class='hamburger'>
-                      <div class='hamburger_part'></div>
-                      <div class='hamburger_part'></div>
-                      <div class='hamburger_part'></div>
-                    </div>
-                    <div class='control next'>
-                      <label for='three'></label>
-                    </div>
-                    <div class='bg'></div>
-                    <!-- <div class='footer'>
-                      <i class="fab fa-google-plus-g"></i>
-                      <i class="fas fa-retweet"></i>
-                      <i class="far fa-heart"></i>
-                      <i class="far fa-share-square"></i>
-                    </div> -->
-                    <div class='content'>
-                      <div class='content_quote'>
-                        <h5>
-                          <span class='quo'>
-                            <i>"</i>
-                          </span>
-                          <span>This is a quote</span>
-                          <span>from someone</span>
-                          <span class='name'>Jamie Coulter</span>
-                          <span class='auth'>- Jcoulterdesign</span>
-                          <span class='quo'>"</span>
-                        </h5>
-                      </div>
-                      <div class='content_picture'>
-                        <img src='img/Bild01.jpg'>
-                      </div>
-                      <h1>
-                        <span>L</span>
-                        <span>o</span>
-                        <span>o</span>
-                        <span>k</span>
-                        <span> </span>
-                        <span>a</span>
-                        <span>t</span>
-                        <span> </span>
-                        <span>t</span>
-                        <span>h</span>
-                        <span>i</span>
-                        <span>s</span>
-                        <span> </span>
-                        <span>a</span>
-                        <span>w</span>
-                        <span>e</span>
-                        <span>s</span>
-                        <span>o</span>
-                        <span>m</span>
-                        <span>e</span>
-                        <br>
-                        <span>h</span>
-                        <span>e</span>
-                        <span>a</span>
-                        <span>d</span>
-                        <span>l</span>
-                        <span>i</span>
-                        <span>n</span>
-                        <span>e</span>
-                        <span> </span>
-                        <span>r</span>
-                        <span>i</span>
-                        <span>g</span>
-                        <span>h</span>
-                        <span>t</span>
-                        <span> </span>
-                        <span>h</span>
-                        <span>e</span>
-                        <span>r</span>
-                        <span>e</span>
-                      </h1>
-                    </div>
-                  </div>
-                </div>
-                <div class='pages_page'>
-                  <div class='pages_page__inner'>
-                    <div class='logo'>Fashion</div>
-                    <div class='pagenumber'>4 5</div>
-                    <div class='content'>
-                      <div class='content_center'>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-                        <h6>Lorem ipsum dolor sit amet</h6>
-                      </div>
-                    </div>
-                    <div class='control'>
-                      <label for='two'></label>
-                    </div>
-                  </div>
-                </div>
-                <div class='pages_page'>
-                  <div class='pages_page__inner'>
-                    <div class='hamburger'>
-                      <div class='hamburger_part'></div>
-                      <div class='hamburger_part'></div>
-                      <div class='hamburger_part'></div>
-                    </div>
-                    <div class='control next'>
-                      <label for='four'></label>
-                    </div>
-                    <div class='bg'></div>
-                    <div class='content_centerimage'>
-                      <img src='img/profoto-collapsible-reflectors-rossella-vanon-fashion-photography-img_2013-600x900.jpg'>
-                    </div>
-                    <div class='content'>
-                      <div class='content_center right'>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-                        <h6>Lorem ipsum dolor sit amet</h6>
-                      </div>
-                    </div>
-                    <!-- <div class='footer'>
-                      <i class="fab fa-google-plus-g"></i>
-                      <i class="fas fa-retweet"></i>
-                      <i class="far fa-heart"></i>
-                      <i class="far fa-share-square"></i>
-                    </div> -->
-                  </div>
-                </div>
-                <div class='pages_page'>
-                  <div class='pages_page__inner'>
-                    <div class='logo'>Fashion</div>
-                    <div class='pagenumber'>6 7</div>
-                    <div class='content'>
-                      <div class='content_section'>
-                        <h2>Super</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum sapien posuere ut. Nunc eget ullamcorper turpis. Sed in vehicula magna, vitae eleifend velit.</p>
-                      </div>
-                      <div class='content_section'>
-                        <h2>Awesome</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum sapien posuere ut. Nunc eget ullamcorper turpis. Sed in vehicula magna, vitae eleifend velit.</p>
-                      </div>
-                      <div class='content_section'>
-                        <h2>Great</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum sapien posuere ut. Nunc eget ullamcorper turpis. Sed in vehicula magna.</p>
-                      </div>
-                    </div>
-                    <div class='control'>
-                      <label for='three'></label>
-                    </div>
-                  </div>
-                </div>
-                <div class='pages_page'>
-                  <div class='pages_page__inner'>
-                    <div class='hamburger'>
-                      <div class='hamburger_part'></div>
-                      <div class='hamburger_part'></div>
-                      <div class='hamburger_part'></div>
-                    </div>
-                    <div class='bg'></div>
-                    <div class='content'></div>
-                    <!-- <div class='footer'>
-                      <i class="fab fa-google-plus-g"></i>
-                      <i class="fas fa-retweet"></i>
-                      <i class="far fa-heart"></i>
-                      <i class="far fa-share-square"></i>
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            <!-- 图片翻页效果 -->
-        </div>
+
+    </div>
+
+    <!-- /文章版面 -->
+    <div class="foot">
     </div>
     <!-- 底部begin -->
+
     <footer class="footer">
         <ul class="autoWidth">
             <li class="autoWidth">iGEM</li>
@@ -414,6 +429,11 @@
         </ul>
     </footer>
     <!-- 底部end -->
+
+    <!-- 文章目录 -->
+    <script src="plugins/201512221545/js/jquery-2.1.1.min.js"></script>
+    <script src="plugins/201512221545/js/main.js"></script> <!-- Resource jQuery -->
+    <!-- /文章目录 -->
 </body>
 
 </html>

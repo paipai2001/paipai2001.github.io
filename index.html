@@ -40,13 +40,18 @@
 	<script src="js/jquery.fullPage.min.js"></script>
 	<script src="js/mypage.js"></script>
 	<!-- fullpage -->
-
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="icon" href="images/iGem.ico">
 </head>
 
 <body>
 
-<!--loading-->
-<div id="loading"> <p id="loading-one"></p > <div class="circle"></div> <div class="circle1"></div> </div>
+	<!--loading-->
+	<div id="loading">
+		<p id="loading-one"></p>
+		<div class="circle"></div>
+		<div class="circle1"></div>
+	</div>
 
 	<!-- 导航栏begin -->
 	<header class="nav_header">
@@ -123,7 +128,7 @@
 	</header>
 	<!-- 导航栏end -->
 	<!-- 第一版面 -->
-	
+
 	<div class="index-card ">
 		<div class="introduction">
 			<svg viewBox="0 0 400 200">
@@ -131,10 +136,36 @@
 			</svg>
 		</div>
 	</div>
-</div>
+	</div>
 	<!-- /第一版面 -->
-	
+	<div class="earth">
+		<img src="images/earth.png" alt="" class="animated rollIn wow">
+		<p class="animated fadeIn wow">There are many people in the world who are short-sighted </p>
+	</div>
+	<!--  -->
+	<div class="index-picture ">
+		
+		<div class="earth1 animated slideInLeft wow">
+			<img src="images/eyes.png" alt="" class="animated slideInLeft wow">
+			<h4 class="animated slideInLeft wow">retinal detachment</h4>
+			<p class="animated slideInLeft wow">There are many people in the world <br>
+				who are suffering from retinal detachment </p>
+		</div>
+		<div class="earth2 animated bounceIn wow">
+			<img src="images/heart.png" alt="" class="animated bounceIn wow">
+			<h4 class="animated bounceIn wow">retinal detachment</h4>
+			<p class="animated bounceIn wow">There are many people in the world <br>
+				who are suffering from retinal detachment </p>
+		</div>
+		<div class="earth3 animated slideInRight wow">
+			<img src="images/eyes.png" alt="" class="animated slideInRight wow">
+			<h4 class="animated slideInRight wow">retinal detachment</h4>
+			<p class="animated slideInRight wow">There are many people in the world <br>
+				who are suffering from retinal detachment </p>
+		</div>
+	</div>
 
+	<!--  -->
 	<!-- 第二版面 -->
 
 	<div class="index-articles">
@@ -264,7 +295,7 @@
 					<div class="option-model">
 						<a href="models.html">
 							<img src="svg/model.svg">
-                              <p>Model</p>
+							<p>Model</p>
 						</a>
 					</div>
 				</div>
@@ -302,7 +333,7 @@
 		var wow = new WOW({
 			boxClass: 'wow',
 			animateClass: 'animated',
-			offset: 0,
+			offset: 100,
 			mobile: true,
 			live: true
 		});

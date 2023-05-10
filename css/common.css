@@ -244,3 +244,107 @@ nav.navbar.bootsnav ul.nav li ul li a:hover {
     }
 }
 /*css loding*/
+/* .index-picture{
+    width: auto;
+    height:500px;
+    background-color: #fff;
+} */
+.earth{
+    width: auto;
+    height:500px;
+    background-color: #fff;
+}
+.earth >img{
+    margin-left: 200px;
+}
+.earth >p{
+   margin-right: 100px;
+   margin-left: 700px;
+   margin-bottom: 800px;
+   margin-top: -250px;
+   font-size: 60px;
+   color: #1c1a1a;
+}
+.index-picture{
+    margin: auto;
+    width: 100%;
+    height:500px;
+    background-color: #fff;
+
+}
+.earth1{
+    display: inline-block;
+    width: 500px;
+    height:500px;
+    background-color: #fff;
+   
+    /* border: 1px;
+    border-radius: 25px;
+    margin-left: 50px; */
+}
+.earth1 >img{
+    display: inline-block;
+    width: 246px;
+    height:200px;
+    margin-left: 100px;
+   
+    
+}
+.earth1 >h4{
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+.earth1 >p{
+   margin-left: 100px;
+   font-size: 20px;
+   color: #1c1a1a;
+}
+.earth2{
+    display: inline-block;
+    width: 500px;
+    height:500px;
+    background-color: #fff;
+    left:40%;
+}
+.earth2 >img{
+    width: 246px;
+    height:200px;
+    margin-left: 100px;
+    display:inline-block;
+}
+.earth2 >h4{
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+.earth2 >p{
+   margin-left: 100px;
+   font-size: 20px;
+   color: #1c1a1a;
+}
+.earth3{
+    display: inline-block;
+    width: 482px;
+    height:500px;
+    background-color: #fff;
+    position: relative;
+   top:-504px;
+    left:67%
+}
+.earth3 >img{
+    width: 246px;
+    height:200px;
+    margin-left: 100px;
+    display:inline-block;
+}
+.earth3 >h4{
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+.earth3 >p{
+   margin-left: 100px;
+   font-size: 20px;
+   color: #1c1a1a;
+}

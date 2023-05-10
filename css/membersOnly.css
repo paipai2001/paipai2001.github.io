@@ -1,0 +1,10 @@
+
+
+/* 修改波浪颜色 */
+.croped {
+    background-color:#fff;
+ }
+ 
+ .croped::before, .croped::after {
+     background-color: #fff;
+ }
