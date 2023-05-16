@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <!--返回首部  -->
+    <meta name="toTop" content="true">
+    <!--  -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IGEM</title>
@@ -24,13 +27,21 @@
     <link href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
     <script src="js/common.js"></script>
-
-
     <!-- 公用部分end -->
     <link rel="stylesheet" href="css/member.css">
-    <link rel="stylesheet" href="css/membersOnly.css">
     <link rel="stylesheet" href="css/description.css">
+    <!-- 返回首部 -->
+    <script src="https://www.jq22.com/jquery/1.8.3/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/toTop.js"></script>
+    <!--  -->
+
+    <link rel="stylesheet" href="css/notebooks.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4011509_onram03jtup.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4011596_406haq6bh76.css">
     <link rel="icon" href="images/iGem.ico">
+
 
     <link href="plugins/assets/css/pignose.layerslider.css" rel="stylesheet" type="text/css" media="all" />
     <link href="plugins/assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -82,16 +93,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         });
     </script>
     <!-- //for smooth scrolling -->
+   
 </head>
 
 <body>
 <!--loading-->
 <div id="loading"> <p id="loading-one"></p > <div class="circle"></div> <div class="circle1"></div> </div>
-<!-- 背景 -->
-<!-- <div class="htmleaf-container">
+    <!-- 背景 -->
+    <!-- <div class="htmleaf-container">
     <canvas id="canvas"></canvas>
 </div> -->
-<!-- /背景 -->
+    <!-- /背景 -->
 <!-- 导航栏begin -->
 <header class="nav_header">
     <div class="nav_container diySettings">
@@ -167,79 +179,67 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
 </header>
 <!-- 导航栏end -->
-<!-- 版头 -->
-<div class="croped">
-    <p class="croped-title">Parts</p>
-    <div class="bkg-img"></div>
-    <!--        <img src="images/upper-background.png" alt="">-->
-</div>
-<!-- /版头 -->
-<!-- 文章版面 -->
-<!-- Test-list-section -->
-<section class="test-menu">
-    <!--- Test-list ---->
-    <div class="test-list">
-        <div class="container">
-            <h3>Parts Overview</h3>
-            <p>Click to know more.</p>
-            <table style="width:100%">
-                <tr>
-                    <th>Part name</th>
-                    <th>Part Number</th>
-                    <th>Part type</th>
-                    <th>Basic/Composite</th>
-                </tr>
-                <tr style="cursor: pointer;" onclick="location='#'">
-                    <td>TUS</td>
-                    <td>1</td>
-                    <td>Coding</td>
-                    <td>Basic</td>
-                </tr>
-                <tr style="cursor: pointer;" onclick="location='#'">
-                    <td>TUS</td>
-                    <td>2</td>
-                    <td>Coding</td>
-                    <td>Basic</td>
-                </tr>
-                <tr style="cursor: pointer;" onclick="location='#'">
-                    <td>TUS</td>
-                    <td>3</td>
-                    <td>Coding</td>
-                    <td>Basic</td>
-                </tr>
-                <tr style="cursor: pointer;" onclick="location='#'">
-                    <td>TUS</td>
-                    <td>4</td>
-                    <td>Coding</td>
-                    <td>Basic</td>
-                </tr>
-                <tr style="cursor: pointer;" onclick="location='#'">
-                    <td>TUS</td>
-                    <td>5</td>
-                    <td>Coding</td>
-                    <td>Basic</td>
-                </tr>
+    <!-- 版头 -->
+    <div class="croped">
+        <p class="croped-title">Education</p>
+        <div class="bkg-img"></div>
+        <!--        <img src="images/upper-background.png" alt="">-->
+    </div>
+<!-- instrument-section -->
+<section class="instrument-section">
 
-            </table>
+    <!--- instrument ---->
+    <div class="instrument">
+        <div class="container">
+            <h3 class="last-updated">Education</h3>
+            <div class="instrument-view">
+                <div class="col-md-6 ins-image">
+                    <img src="plugins/assets/images/instrument.jpg" title="instrument" alt="" />
+                </div>
+                <div class="col-md-6 ins-details">
+                    <div class="ins-name">
+                        <h3>LOREM IPSUM AIS</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                    </div>
+
+                </div>
+                <div class="clerfix"></div>
+            </div>
         </div>
     </div>
-    <!--- /Test-list ---->
-</section>
-<!-- //Test-list-section -->
+    <!--- /instrument ---->
 
-<!-- 底部begin -->
-<footer class="footer">
-    <ul class="autoWidth">
-        <li class="autoWidth">iGEM</li>
-        <li>Copyright © 2023-2024</li>
+    <div class="return-button">
+    <a href="Education.html">
+    <ul id="three-clean-buttons-freebie">
+        <li>
+            <div class="three-clean-buttons">
+                <div class="clean-button">
+                    <span class="text">Return to Overview</span>
+                </div>
+            </div>
+        </li>
     </ul>
-</footer>
-<!-- 底部end -->
+    </a>
+    </div>
+</section>
+<!-- //instrument-section -->
 
-<!-- 文章目录 -->
-<script src="plugins/201512221545/js/jquery-2.1.1.min.js"></script>
-<script src="plugins/201512221545/js/main.js"></script> <!-- Resource jQuery -->
-<!-- /文章目录 -->
+    <!-- /文章版面 -->
+    <!-- 底部begin -->
+    <footer class="footer">
+        <ul class="autoWidth">
+            <li class="autoWidth">iGEM</li>
+            <li>Copyright © 2023-2024</li>
+        </ul>
+    </footer>
+    <!-- 底部end -->
+
+    <!-- 文章目录 -->
+    <script src="plugins/201512221545/js/jquery-2.1.1.min.js"></script>
+    <script src="plugins/201512221545/js/main.js"></script> <!-- Resource jQuery -->
+    <!-- /文章目录 -->
 </body>
 
 </html>

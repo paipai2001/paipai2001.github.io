@@ -348,3 +348,7 @@ nav.navbar.bootsnav ul.nav li ul li a:hover {
    font-size: 20px;
    color: #1c1a1a;
 }
+
+.croped{
+    background-attachment: fixed;
+}

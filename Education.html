@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <!--返回首部  -->
+    <meta name="toTop" content="true">
+    <!--  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGEM</title>
+    <!-- 插件引入需要begin -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins\201711041506\css\bootsnav.css">
+    <link rel="stylesheet" href="css/plugin-nav.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="plugins\201711041506\js\bootsnav.js"></script>
+    <!-- ======================== -->
+    <link rel="stylesheet" href="plugins/201512221545/css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" type="text/css" href="plugins/201512221545/css/default.css">
+    <link rel="stylesheet" href="plugins/201512221545/css/style.css"> <!-- Resource style -->
+    <script src="plugins/201512221545/js/modernizr.js"></script> <!-- Modernizr -->
+    <!-- 插件引入需要end -->
+    <!-- 公用部分begin -->
+    <link href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/common.js"></script>
+    <!-- 公用部分end -->
+    <link rel="stylesheet" href="css/member.css">
+    <link rel="stylesheet" href="css/membersOnly.css">
+    <link rel="stylesheet" href="css/description.css">
+    <!-- 返回首部 -->
+    <script src="https://www.jq22.com/jquery/1.8.3/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/toTop.js"></script>
+    <!--  -->
+
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4011509_onram03jtup.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4011596_406haq6bh76.css">
+    <link rel="icon" href="images/iGem.ico">
+
+
+    <link href="plugins/assets/css/pignose.layerslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="plugins/assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="plugins/assets/css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+    <link href="plugins/assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="plugins/assets/css/gallery.css" rel="stylesheet" type="text/css" media="all" /> <!-- gallery css -->
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Prevention Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script
+        type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //for-mobile-apps -->
+
+    <!-- js -->
+    <script type="text/javascript" src="plugins/assets/js/jquery.min.js"></script>
+    <!-- js -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="plugins/assets/js/bootstrap.min.js"></script>
+    <script src="plugins/assets/js/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="plugins/assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="plugins/assets/css/custom.css" />
+    <script type="text/javascript" src="plugins/assets/js/modernizr.custom.79639.js"></script>
+    <!-- js for news -->
+    <script src="plugins/assets/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="plugins/assets/js/pignose.layerslider.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(window).load(function () {
+            $('#visual').pignoseLayerSlider({
+                play: '.btn-play',
+                pause: '.btn-pause',
+                next: '.btn-next',
+                prev: '.btn-prev'
+            });
+        });
+        //]]>
+    </script>
+    <!-- /js for news -->
+
+    <!-- for smooth scrolling -->
+    <script type="text/javascript" src="plugins/assets/js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!-- //for smooth scrolling -->
+    <!-- for easy-responsive-tabs -->
+    <link rel="stylesheet" type="text/css" href="plugins/assets/css/easy-responsive-tabs.css " />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //Horizontal Tab
+            $('#parentHorizontalTab').easyResponsiveTabs({
+                type: 'default', //Types: default, vertical, accordion
+                width: 'auto', //auto or any width like 600px
+                fit: true, // 100% fit in a container
+                tabidentify: 'hor_1', // The tab groups identifier
+                activate: function (event) { // Callback function if tab is switched
+                    var $tab = $(this);
+                    var $info = $('#nested-tabInfo');
+                    var $name = $('span', $info);
+                    $name.text($tab.text());
+                    $info.show();
+                }
+            });
+
+            // Child Tab
+            $('#ChildVerticalTab_1').easyResponsiveTabs({
+                type: 'vertical',
+                width: 'auto',
+                fit: true,
+                tabidentify: 'ver_1', // The tab groups identifier
+                activetab_bg: '#fff', // background color for active tabs in this group
+                inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
+                active_border_color: '#c1c1c1', // border color for active tabs heads in this group
+                active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
+            });
+
+            //Vertical Tab
+            $('#parentVerticalTab').easyResponsiveTabs({
+                type: 'vertical', //Types: default, vertical, accordion
+                width: 'auto', //auto or any width like 600px
+                fit: true, // 100% fit in a container
+                closed: 'accordion', // Start closed if in accordion view
+                tabidentify: 'hor_1', // The tab groups identifier
+                activate: function (event) { // Callback function if tab is switched
+                    var $tab = $(this);
+                    var $info = $('#nested-tabInfo2');
+                    var $name = $('span', $info);
+                    $name.text($tab.text());
+                    $info.show();
+                }
+            });
+        });
+    </script>
+    <!-- //for easy-responsive-tabs -->
+
+</head>
+
+<body>
+    <!--loading-->
+    <div id="loading">
+        <p id="loading-one"></p>
+        <div class="circle"></div>
+        <div class="circle1"></div>
+    </div>
+    <!-- 背景 -->
+    <!-- <div class="htmleaf-container">
+    <canvas id="canvas"></canvas>
+</div> -->
+    <!-- /背景 -->
+    <!-- 导航栏begin -->
+    <header class="nav_header">
+        <div class="nav_container diySettings">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-default navbar-mobile bootsnav on">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#navbar-menu">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbar-menu">
+                            <ul class="nav navbar-nav">
+                                <!-- 选项卡begin -->
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">team</a>
+                                    <ul class="dropdown-menu animated">
+                                        <li><a href="members.html">Members</a></li>
+                                        <li><a href="collaboration.html">Collaborations</a></li>
+                                        <li><a href="partnership.html">Partnership</a></li>
+                                        <li><a href="attributions.html">Attributions</a></li>
+                                        <li><a href="notebook.html">Notebook</a></li>
+                                        <li><a href="experiment.html">Experiments</a></li>
+                                        <li><a href="safety.html">Safety</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">project</a>
+                                    <ul class="dropdown-menu animated">
+                                        <li><a href="descriptions.html">Descriptions</a></li>
+                                        <li><a href="design.html">Design</a></li>
+                                        <li><a href="models.html">Models</a></li>
+                                        <li><a href="result.html">Result</a></li>
+                                        <li><a href="proof of concept.html">Proof of Concept</a></li>
+                                        <li><a href="hardware.html">Hardware</a></li>
+                                        <li><a href="propose implementation.html">Proposed Implementation</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">parts</a>
+                                    <ul class="dropdown-menu animated">
+                                        <li><a href="parts.html">Parts</a></li>
+                                        <li><a href="contributions.html">Contributions</a></li>
+                                        <li><a href="Engineering.html">Engineering</a></li>
+                                        <li><a href="Improve.html">Improve</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">human practices</a>
+                                    <ul class="dropdown-menu animated">
+                                        <li><a href="HP overview.html">Overview</a></li>
+                                        <li><a href="Education.html">Education</a></li>
+                                        <li><a href="Science%20Communication.html">Science communication</a></li>
+                                        <li><a href="Supporting.html">Supporting Entrepreneurship</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">awards</a>
+                                    <ul class="dropdown-menu animated">
+                                        <li><a href="awards.html">Judging</a></li>
+                                    </ul>
+                                </li>
+                                <!-- 选项卡end -->
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="index.html"><img src="images\logo.png" alt=""></a>
+        </div>
+    </header>
+    <!-- 导航栏end -->
+    <!-- 版头 -->
+    <div class="croped">
+        <p class="croped-title">Education</p>
+        <div class="bkg-img"></div>
+        <!--        <img src="images/upper-background.png" alt="">-->
+    </div>
+    <!-- instruments-section -->
+    <section class="instruments-section">
+
+        <!--- instruments ---->
+        <div class="instruments">
+            <div class="container">
+                <h3 class="last-updated">Education</h3>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                    literature, discovered the undoubtable source.</p>
+                <p>There are many variations of passages of the Internet. It uses a dictionary of over 200 Latin words,
+                    combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
+                    reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or
+                    non-characteristic words etc.</p>
+                <!--Horizontal Tab-->
+                <div class="lab-instruments">
+                    <div id="parentHorizontalTab">
+                        <ul class="resp-tabs-list hor_1">
+                            <li>All</li>
+                            <li>Cat-1</li>
+                            <li>Cat-2</li>
+                            <li>Cat-3</li>
+                            <li>Cat-4</li>
+                            <li>Cat-5</li>
+                            <li>Cat-6</li>
+                            <li>Cat-7</li>
+                            <li>Cat-8</li>
+                        </ul>
+                        <div class="resp-tabs-container hor_1">
+                            <div>
+                                <!-- all-instruments -->
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins1.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Lorem Ipsum</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins2.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins3.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins4.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Lorem Ipsum</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins5.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins14.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins7.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Lorem Ipsum</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins8.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins9.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins10.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Lorem Ipsum</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins11.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins12.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins13.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Lorem Ipsum</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins14.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins15.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins16.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <!-- //all-instruments -->
+                            </div>
+                            <div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins4.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Lorem Ipsum</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins5.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins14.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins7.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Lorem Ipsum</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins8.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins9.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins10.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Lorem Ipsum</div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins12.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins13.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Lorem Ipsum</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins14.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins15.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins16.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins1.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Lorem Ipsum</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins2.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins3.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins2.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins4.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Lorem Ipsum</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins14.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins8.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins10.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Lorem Ipsum</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins16.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <!-- //all-instruments -->
+                            </div>
+                            <div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins3.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins4.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Lorem Ipsum</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins5.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins14.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins7.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Lorem Ipsum</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins8.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins11.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins14.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins15.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins5.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins8.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins13.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Lorem Ipsum</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins14.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins1.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Lorem Ipsum</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins2.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins9.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins11.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins13.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Lorem Ipsum</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins15.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">At vero eos</div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins11.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 jm-item first">
+                                    <div class="jm-item-wrapper">
+                                        <div class="jm-item-image">
+                                            <img src="plugins/assets/images/ins14.jpg" alt="instrument" />
+                                            <span class="jm-item-overlay"> </span>
+                                            <div class="jm-item-button"><a href="single-instrument.html">View</a></div>
+                                        </div>
+                                        <div class="jm-item-title">Sed ut perspiciatis</div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--- /instruments ---->
+    </section>
+    <!-- //instruments-section -->
+
+    <!-- /文章版面 -->
+    <!-- 底部begin -->
+    <footer class="footer">
+        <ul class="autoWidth">
+            <li class="autoWidth">iGEM</li>
+            <li>Copyright © 2023-2024</li>
+        </ul>
+    </footer>
+    <!-- 底部end -->
+
+    <!-- 文章目录 -->
+    <script src="plugins/201512221545/js/jquery-2.1.1.min.js"></script>
+    <script src="plugins/201512221545/js/main.js"></script> <!-- Resource jQuery -->
+
+    <script src="plugins/assets/js/easyResponsiveTabs.js"></script>
+    <!-- /文章目录 -->
+</body>
+
+</html>
