@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://paipai2001.github.io/</loc>
-    <lastmod>2025-02-15T17:39:44+08:00</lastmod>
+    <lastmod>2025-02-15T23:20:17+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -20,11 +20,11 @@
                 href="https://paipai2001.github.io/"
                 />
   </url><url>
-    <loc>https://paipai2001.github.io/p/myfirstblog/</loc>
-    <lastmod>2025-02-15T17:39:44+08:00</lastmod>
+    <loc>https://paipai2001.github.io/p/newnewnew/</loc>
+    <lastmod>2025-02-15T23:20:17+08:00</lastmod>
   </url><url>
     <loc>https://paipai2001.github.io/post/</loc>
-    <lastmod>2025-02-15T17:39:44+08:00</lastmod>
+    <lastmod>2025-02-15T23:20:17+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
@@ -35,6 +35,9 @@
                 hreflang="zh-cn"
                 href="https://paipai2001.github.io/post/"
                 />
+  </url><url>
+    <loc>https://paipai2001.github.io/p/myfirstblog/</loc>
+    <lastmod>2025-02-15T17:39:44+08:00</lastmod>
   </url><url>
     <loc>https://paipai2001.github.io/categories/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
