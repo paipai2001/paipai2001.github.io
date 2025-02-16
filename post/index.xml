@@ -10828,7 +10828,7 @@ $$</description>
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;mid不是要返回的结果 所以要对应进行+1和-1&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5cLEGION%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20240327193538192.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://paipai2001.github.io/..%5c..%5c..%5cstatic%5ctypora-user-images%5cimage-20240327193538192.png&#34;
 	
 	
 	
@@ -10840,7 +10840,7 @@ $$</description>
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://leetcode.cn/problems/remove-element/submissions/517350708/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;27. 移除元素 - 力扣（LeetCode）&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5cLEGION%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20240327200311571.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://paipai2001.github.io/..%5c..%5c..%5cstatic%5ctypora-user-images%5cimage-20240327200311571.png&#34;
 	
 	
 	
@@ -10853,7 +10853,7 @@ $$</description>
 &lt;p&gt;其实是刷新数组 不断反复刷新数组 就是一个是新的生成数组的指针 一个是旧的数组 旧的数组指针用来判断 新的用来更新&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://leetcode.cn/problems/squares-of-a-sorted-array/submissions/517360309/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;977. 有序数组的平方 - 力扣（LeetCode）&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5cLEGION%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20240327202336859.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://paipai2001.github.io/..%5c..%5c..%5cstatic%5ctypora-user-images%5cimage-20240327202336859.png&#34;
 	
 	
 	
@@ -10865,7 +10865,7 @@ $$</description>
 &gt;&lt;/p&gt;
 &lt;p&gt;前后两个指针比较 较大的先入列 &lt;strong&gt;但这是必须建立在数组有序的前提下&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;还有就是指针越界的问题 k != 0是错误的 往前一位就对了 因为使用了k&amp;ndash; 必须到0这个数字也判断完后才叫做完整结束&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5cLEGION%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20240327222239599.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://paipai2001.github.io/..%5c..%5c..%5cstatic%5ctypora-user-images%5cimage-20240327222239599.png&#34;
 	
 	
 	
@@ -10877,7 +10877,7 @@ $$</description>
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://leetcode.cn/problems/minimum-size-subarray-sum/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;209. 长度最小的子数组 - 力扣（LeetCode）&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5cLEGION%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20240409012218530.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://paipai2001.github.io/..%5c..%5c..%5cstatic%5ctypora-user-images%5cimage-20240409012218530.png&#34;
 	
 	
 	
@@ -10890,7 +10890,7 @@ $$</description>
 &lt;p&gt;我本来以为要用两个循环写的 后面忽然意识到 左边起始指针的移动 是可以通过最外层的循环一层层往右 如果不符和大于等于目标值这个条件 就会再次进入到内循环 只要明白了这一点其实就不难了&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://leetcode.cn/problems/spiral-matrix-ii/submissions/521565017/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;59. 螺旋矩阵 II - 力扣（LeetCode）&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5cLEGION%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20240409144407084.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://paipai2001.github.io/..%5c..%5c..%5cstatic%5ctypora-user-images%5cimage-20240409144407084.png&#34;
 	
 	
 	
@@ -10900,7 +10900,7 @@ $$</description>
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5cLEGION%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20240409144252733.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://paipai2001.github.io/..%5c..%5c..%5cstatic%5ctypora-user-images%5cimage-20240409144252733.png&#34;
 	
 	
 	
@@ -10913,7 +10913,7 @@ $$</description>
 &lt;h2 id=&#34;2-链表&#34;&gt;2 链表
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://leetcode.cn/problems/remove-linked-list-elements/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;203. 移除链表元素 - 力扣（LeetCode）&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5cLEGION%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20240411202504855.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://paipai2001.github.io/..%5c..%5c..%5cstatic%5ctypora-user-images%5cimage-20240411202504855.png&#34;
 	
 	
 	
@@ -10935,10 +10935,10 @@ $$</description>
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此处保留一下随想录的参考答案：&lt;/p&gt;
-&lt;img src=&#34;C:\Users\LEGION\AppData\Roaming\Typora\typora-user-images\image-20240411205502778.png&#34; alt=&#34;image-20240411205502778&#34; style=&#34;zoom:67%;&#34; /&gt;
+&lt;img src=&#34;..\..\..\static\typora-user-images\image-20240411205502778.png&#34; alt=&#34;image-20240411205502778&#34; style=&#34;zoom:67%;&#34; /&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://leetcode.cn/problems/reverse-linked-list/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;206. 反转链表 - 力扣（LeetCode）&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5cLEGION%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20240411222529330.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://paipai2001.github.io/..%5c..%5c..%5cstatic%5ctypora-user-images%5cimage-20240411222529330.png&#34;
 	
 	
 	
@@ -10950,7 +10950,7 @@ $$</description>
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://leetcode.cn/problems/swap-nodes-in-pairs/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;24. 两两交换链表中的节点 - 力扣（LeetCode）&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5cLEGION%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20240412145809434.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://paipai2001.github.io/..%5c..%5c..%5cstatic%5ctypora-user-images%5cimage-20240412145809434.png&#34;
 	
 	
 	
@@ -10962,7 +10962,7 @@ $$</description>
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://leetcode.cn/problems/remove-nth-node-from-end-of-list/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;19. 删除链表的倒数第 N 个结点 - 力扣（LeetCode）&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5cLEGION%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20240412152937967.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://paipai2001.github.io/..%5c..%5c..%5cstatic%5ctypora-user-images%5cimage-20240412152937967.png&#34;
 	
 	
 	
@@ -10974,7 +10974,7 @@ $$</description>
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://leetcode.cn/problems/intersection-of-two-linked-lists-lcci/submissions/522902101/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;面试题 02.07. 链表相交 - 力扣（LeetCode）&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5cLEGION%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20240412173101020.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://paipai2001.github.io/..%5c..%5c..%5cstatic%5ctypora-user-images%5cimage-20240412173101020.png&#34;
 	
 	
 	
@@ -10989,7 +10989,7 @@ $$</description>
 &lt;p&gt;数学公式的解释：&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://programmercarl.com/0142.%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;环找到了 那入口呢？&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5cLEGION%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20240412182458053.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://paipai2001.github.io/..%5c..%5c..%5cstatic%5ctypora-user-images%5cimage-20240412182458053.png&#34;
 	
 	
 	
@@ -11310,9 +11310,9 @@ $$</description>
 &lt;/div&gt;&lt;h2 id=&#34;3-哈希表&#34;&gt;3 哈希表
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://leetcode.cn/problems/valid-anagram/description/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;242. 有效的字母异位词 - 力扣（LeetCode）&lt;/a&gt;&lt;/p&gt;
-&lt;img src=&#34;C:\Users\LEGION\AppData\Roaming\Typora\typora-user-images\image-20240413175248501.png&#34; alt=&#34;image-20240413175248501&#34; style=&#34;zoom:67%;&#34; /&gt;
+&lt;img src=&#34;..\..\..\static\typora-user-images\image-20240413175248501.png&#34; alt=&#34;image-20240413175248501&#34; style=&#34;zoom:67%;&#34; /&gt;
 &lt;p&gt;注解：增强循环这个知识点&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5cLEGION%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20240413180623077.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://paipai2001.github.io/..%5c..%5c..%5cstatic%5ctypora-user-images%5cimage-20240413180623077.png&#34;
 	
 	
 	
@@ -11323,7 +11323,7 @@ $$</description>
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;unordered_set&lt;int&gt; nums_set(nums1.begin(),nums1.end())&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5cLEGION%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20240413180835129.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://paipai2001.github.io/..%5c..%5c..%5cstatic%5ctypora-user-images%5cimage-20240413180835129.png&#34;
 	
 	
 	
